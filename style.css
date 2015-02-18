@@ -1,0 +1,141 @@
+/*
+Theme Name:		Book Store
+Theme URI:		https://wordpress.org/themes/storefront
+Description:	A Storefront child theme designed for small WooCommerce stores / storefront child theme boilerplates. Book Store features a simple, traditional design which you can customise using the settings available in the WordPress Customizer. Looking for a theme for your new WooCommerce store? Look no further than Storefront and Book Store!
+Author:			WooThemes
+Author URI:		http://woothemes.com
+Template:		storefront
+Version:		1.0.0
+License:		GNU General Public License v2 or later
+License URI:	http://www.gnu.org/licenses/gpl-2.0.html
+Tags:			light, dark, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
+Text Domain:	book-store
+*/
+/* =Book Store styles starts here
+-------------------------------------------------------------- */
+body {
+  background: #303030;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+body, button, input, select, textarea {
+  font-family: 'Lato', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  letter-spacing: 0 !important; }
+  h1 a, h1 label, h2 a, h2 label, h3 a, h3 label, h4 a, h4 label, h5 a, h5 label, h6 a, h6 label {
+    font-weight: 400; }
+
+.widget h1, .widget h2, .widget h3, .widget h4, .widget h5, .widget h6 {
+  font-weight: 400; }
+
+.site-header, .site-footer {
+  background-color: transparent !important; }
+
+button.menu-toggle {
+  margin-bottom: 0; }
+
+.sctb-primary-navigation {
+  clear: both;
+  background: #2b2b2b;
+  -webkit-font-smoothing: antialiased; }
+  .sctb-primary-navigation:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.col-full, .header-widget-region {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+.header-widget-region {
+  margin: 0; }
+  .header-widget-region .col-full {
+    background: #fff;
+    padding: 0 1em; }
+  .header-widget-region .widget {
+    padding-top: 2.244em; }
+
+.site-content .col-full {
+  background: #fff;
+  padding: 1.618em; }
+
+.site-footer {
+  padding: 0; }
+  .site-footer .col-full {
+    background: #f6f6f6;
+    padding: 1.618em; }
+
+.sprh-hero .col-full, .sph-hero .col-full {
+  padding: 1.618em; }
+
+.woocommerce-breadcrumb {
+  margin-top: 0; }
+
+.site-header-cart {
+  margin-bottom: 0; }
+
+.page-template-template-homepage .site-main {
+  padding-top: 0; }
+
+.woocommerce-checkout.scc-distraction-free-checkout .sctb-primary-navigation {
+  display: none; }
+.woocommerce-checkout.scc-distraction-free-checkout .site-header {
+  margin-bottom: 0; }
+
+.sph-hero .col-full {
+  background: transparent !important;
+  box-shadow: none; }
+
+@media screen and (min-width: 768px) {
+  .col-full {
+    padding: 0 5.874em; }
+  .sctb-primary-navigation {
+    margin: -5.874em;
+    padding: 0 5.874em;
+    border-top-left-radius: 0.327em;
+    border-top-right-radius: 0.327em; }
+  .site-branding, .site-search, .site-header-cart, .site-logo-anchor {
+    margin-bottom: 4.236em; }
+  .site-header {
+    padding-top: 4.236em; }
+  .main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a, .site-header-cart .cart-contents {
+    padding-bottom: 1.618em !important; }
+  .site-content .col-full, .site-footer .col-full, .header-widget-region .col-full, .sph-hero .col-full, .sprh-hero .col-full {
+    padding: 4.236em 5.874em; }
+  .header-widget-region .col-full {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .site-footer .col-full {
+    padding: 2.618em 5.874em; }
+  .main-navigation ul.menu li.current-menu-item > a {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .main-navigation ul ul {
+    background: #2b2b2b; }
+  .woocommerce-active .site-header .site-header-cart, .main-navigation {
+    padding-top: 0; }
+    .woocommerce-active .site-header .site-header-cart > li > a, .woocommerce-active .site-header .site-header-cart > li .cart-contents, .woocommerce-active .site-header .site-header-cart ul.menu > li > a, .woocommerce-active .site-header .site-header-cart ul.menu > li .cart-contents, .woocommerce-active .site-header .site-header-cart ul.nav-menu > li > a, .woocommerce-active .site-header .site-header-cart ul.nav-menu > li .cart-contents, .main-navigation > li > a, .main-navigation > li .cart-contents, .main-navigation ul.menu > li > a, .main-navigation ul.menu > li .cart-contents, .main-navigation ul.nav-menu > li > a, .main-navigation ul.nav-menu > li .cart-contents {
+      padding-top: 1.618em; }
+  .site-header-cart .cart-contents:after {
+    top: 1.618em; }
+  .page-template-template-homepage .content-area .sph-hero, .page-template-template-homepage .content-area .sprh-hero {
+    margin-top: 0; }
+    .page-template-template-homepage .content-area .sph-hero.full, .page-template-template-homepage .content-area .sprh-hero.full {
+      margin-left: -5.874em;
+      margin-right: -5.874em; }
+  .page-template-template-homepage .site-main > .sph-hero:first-child, .page-template-template-homepage .site-main > .sprh-hero:first-child {
+    margin-top: -4.236em; }
+  .sph-hero .col-full, .sprh-hero .col-full {
+    background-color: transparent !important;
+    padding: 0; }
+  .sph-hero h1, .sprh-hero h1 {
+    font-weight: 400; }
+  .site-main .sph-hero .overlay, .site-main .sprh-hero .overlay {
+    padding: 4.236em; } }
+
+@media screen and (max-width: 65.141em) {
+  .col-full {
+    margin-left: 0;
+    margin-right: 0; } }

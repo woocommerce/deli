@@ -1,0 +1,291 @@
+/*
+Theme Name:		Book Store
+Theme URI:		https://wordpress.org/themes/storefront
+Description:	A Storefront child theme designed for small WooCommerce stores / storefront child theme boilerplates. Book Store features a simple, traditional design which you can customise using the settings available in the WordPress Customizer. Looking for a theme for your new WooCommerce store? Look no further than Storefront and Book Store!
+Author:			WooThemes
+Author URI:		http://woothemes.com
+Template:		storefront
+Version:		1.0.0
+License:		GNU General Public License v2 or later
+License URI:	http://www.gnu.org/licenses/gpl-2.0.html
+Tags:			light, dark, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
+Text Domain:	book-store
+*/
+
+
+/* =Book Store styles starts here
+-------------------------------------------------------------- */
+
+@import 'bourbon';
+@import 'susy';
+@import '../storefront/sass/utils/variables';
+
+body {
+	background: #303030;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+// Typography
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	letter-spacing: 0 !important;
+
+	a,
+	label {
+		font-weight: 400;
+	}
+}
+
+.widget {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 400;
+	}
+}
+
+.site-header,
+.site-footer {
+	background-color: transparent !important;
+}
+
+// Navigation
+button.menu-toggle {
+	margin-bottom: 0;
+}
+
+.sctb-primary-navigation {
+	clear: both;
+	background: #2b2b2b;
+	@include clearfix;
+	-webkit-font-smoothing: antialiased;
+}
+
+// Layout
+.col-full,
+.header-widget-region {
+	@include box-sizing(content-box);
+}
+
+.header-widget-region {
+	margin: 0;
+
+	.col-full {
+		background: #fff;
+		padding: 0 1em;
+	}
+
+	.widget {
+		padding-top: 2.244em;
+	}
+}
+
+.site-content {
+	.col-full {
+		background: #fff;
+		padding: 1.618em;
+	}
+}
+
+.site-footer {
+	padding: 0;
+
+	.col-full {
+		background: #f6f6f6;
+		padding: 1.618em;
+	}
+}
+
+.sprh-hero,
+.sph-hero {
+	.col-full {
+		padding: 1.618em;
+	}
+}
+
+.woocommerce-breadcrumb {
+	margin-top: 0;
+}
+
+.site-header-cart {
+	margin-bottom: 0;
+}
+
+// Homepage template
+.page-template-template-homepage {
+	.site-main {
+		padding-top: 0;
+	}
+}
+
+// Checkout Customiser compatibility
+.woocommerce-checkout.scc-distraction-free-checkout {
+	.sctb-primary-navigation {
+		display: none;
+	}
+
+	.site-header {
+		margin-bottom: 0;
+	}
+}
+
+// Storefront Parallax Hero compatibility
+.sph-hero {
+	.col-full {
+		background: transparent !important;
+		box-shadow: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	$horizontal_padding: 5.874em;
+
+	.col-full {
+		padding: 0 $horizontal_padding;
+	}
+
+	.sctb-primary-navigation {
+		margin: 0 -$horizontal_padding;
+		padding: 0 $horizontal_padding;
+		@include border-top-radius(.327em);
+	}
+
+	.site-branding, .site-search, .site-header-cart, .site-logo-anchor {
+		margin-bottom: 4.236em;
+	}
+
+	.site-header {
+		padding-top: 4.236em;
+	}
+
+	.main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a,
+	.site-header-cart .cart-contents {
+		padding-bottom: 1.618em !important;
+	}
+
+	.site-content,
+	.site-footer,
+	.header-widget-region,
+	.sph-hero,
+	.sprh-hero {
+		.col-full {
+			padding: 4.236em $horizontal_padding;
+		}
+	}
+
+	.header-widget-region {
+		.col-full {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	.site-footer {
+		.col-full {
+			padding: 2.618em $horizontal_padding;
+		}
+	}
+
+	.main-navigation {
+		ul.menu {
+			li {
+				&.current-menu-item {
+					> a {
+						background-color: rgba(0,0,0,0.1);
+					}
+				}
+			}
+		}
+
+		ul {
+			ul {
+				background: #2b2b2b;
+			}
+		}
+	}
+
+	.woocommerce-active .site-header .site-header-cart,
+	.main-navigation {
+		padding-top: 0;
+
+		> li,
+		ul.menu > li,
+		ul.nav-menu > li {
+			> a,
+			.cart-contents {
+				padding-top: 1.618em;
+			}
+		}
+	}
+
+	.site-header-cart .cart-contents:after {
+		top: 1.618em;
+	}
+
+	// Parallax hero commpatibility
+	.page-template-template-homepage {
+		.content-area {
+			.sph-hero,
+			.sprh-hero {
+				margin-top: 0;
+
+				&.full {
+					margin-left: -$horizontal_padding;
+					margin-right: -$horizontal_padding;
+				}
+			}
+		}
+
+		.site-main > .sph-hero,
+		.site-main > .sprh-hero {
+			&:first-child {
+				margin-top: -4.236em;
+			}
+		}
+	}
+
+	.sph-hero,
+	.sprh-hero {
+		.col-full {
+			background-color: transparent !important;
+			padding: 0;
+		}
+
+		h1 {
+			font-weight: 400;
+		}
+	}
+
+	.site-main {
+		.sph-hero,
+		.sprh-hero {
+			.overlay {
+				padding: 4.236em;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 65.141em) {
+	.col-full {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
