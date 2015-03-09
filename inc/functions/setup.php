@@ -29,6 +29,25 @@ function bs_enqueue_child_styles() {
 	global $bs_version;
 
     wp_enqueue_style( 'bs-style', get_stylesheet_uri(), array( 'storefront-style' ), $bs_version );
-    wp_enqueue_style( 'lato', '//fonts.googleapis.com/css?family=Lato:400,700,400italic', array( 'bs-style' ) );
-    wp_enqueue_style( 'playfair-display', '//fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic', array( 'bs-style' ) );
+    wp_enqueue_style( 'lato', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic,900', array( 'bs-style' ) );
+}
+
+/**
+ * Shop columns
+ * @return int number of columns
+ */
+function bs_loop_columns( $columns ) {
+	$columns = 4;
+	return $columns;
+}
+
+/**
+ * Adjust related products columns
+ * @return array $args the modified arguments
+ */
+function bs_related_products_args( $args ) {
+	$args['posts_per_page'] = 4;
+	$args['columns']		= 4;
+
+	return $args;
 }

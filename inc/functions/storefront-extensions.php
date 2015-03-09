@@ -37,6 +37,9 @@ function bs_set_theme_mods() {
 
 	// Set the content background color on activation
 	set_theme_mod( 'sd_content_background_color', '#fff' );
+
+	// Set the product column setting in the WooCommerce customiser extension
+	set_theme_mod( 'swc_product_columns', 4 );
 }
 
 /**
@@ -47,8 +50,7 @@ function bs_add_extension_customizer_css() {
 	$content_background_color = storefront_sanitize_hex_color( get_theme_mod( 'sd_content_background_color', apply_filters( 'storefront_default_background_color', '#fcfcfc' ) ) );
 
 	$style = '
-		.site-content .col-full,
-		.header-widget-region .col-full {
+		.content-area {
 			background-color: ' . $content_background_color . ';
 		}';
 
