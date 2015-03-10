@@ -37,7 +37,7 @@ add_filter( 'storefront_default_text_color', 					'bs_color_english_winter' );
 add_filter( 'storefront_default_footer_text_color', 			'bs_color_white' );
 
 add_filter( 'storefront_default_accent_color', 					'bs_color_chocolate' );
-add_filter( 'storefront_default_button_alt_background_color', 	'bs_color_chocolate' );
+add_filter( 'storefront_default_button_alt_background_color', 	'bs_color_orange' );
 
 add_filter( 'storefront_default_background_color', 				'bs_color_leather' );
 

@@ -17,7 +17,6 @@ function bs_add_customizer_css() {
 	$lighten_factor		= 15;
 	$style = '
 		.bs-primary-navigation {
-			background-color: ' . $header_bg_color . ';
 			background:' . $header_bg_color . '; /* Old browsers */
 			background: -moz-linear-gradient(top, ' . storefront_adjust_color_brightness( $header_bg_color, $lighten_factor ) . ' 0%,' . $header_bg_color . ' 100%); /* FF3.6+ */
 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,' .  $header_bg_color . '), color-stop(100%,' .  $header_bg_color . ')); /* Chrome,Safari4+ */
@@ -28,6 +27,7 @@ function bs_add_customizer_css() {
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' .  storefront_adjust_color_brightness( $header_bg_color, $lighten_factor ) . ', endColorstr=' .  $header_bg_color . ',GradientType=0 ); /* IE6-9 */
 		}
 
+		.widget-area .widget:before,
 		.single-product div.product .summary .price {
 			color: ' . $accent_color . ';
 		}';
