@@ -42,6 +42,6 @@ function bs_content_wrapper_close() {
  * @return int products to display per page
  */
 function bs_products_per_page( $per_page ) {
-	$per_page = 15;
+	$per_page = 12;
 	return intval( $per_page );
 }
