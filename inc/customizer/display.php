@@ -10,8 +10,12 @@
  * @return void
  */
 function bs_add_customizer_css() {
-	$header_bg_color 	= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#fcfcfc' ) ) );
-	$accent_color		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_accent_color' ) );
+	$header_bg_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#fcfcfc' ) ) );
+	$accent_color			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_accent_color' ) );
+	$footer_link_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_link_color', apply_filters( 'storefront_default_footer_link_color', '#96588a' ) ) );
+	$footer_heading_color 	= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_heading_color', apply_filters( 'storefront_default_footer_heading_color', '#494c50' ) ) );
+	$footer_text_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_text_color', apply_filters( 'storefront_default_footer_text_color', '#61656b' ) ) );
+
 
 	$darken_factor		= -15;
 	$lighten_factor		= 15;
@@ -30,6 +34,18 @@ function bs_add_customizer_css() {
 		.widget-area .widget:before,
 		.single-product div.product .summary .price {
 			color: ' . $accent_color . ';
+		}
+
+		.header-widget-region {
+			color: ' . $footer_text_color . ';
+		}
+
+		.header-widget-region a:not(.button) {
+			color: ' . $footer_link_color . ';
+		}
+
+		.header-widget-region h1, .header-widget-region h2, .header-widget-region h3, .header-widget-region h4, .header-widget-region h5, .header-widget-region h6 {
+			color: ' . $footer_heading_color . ';
 		}';
 
 	wp_add_inline_style( 'bs-style', $style );
