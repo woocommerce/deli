@@ -501,8 +501,11 @@ button.menu-toggle {
       position: absolute;
       top: .618em;
       right: .618em; }
-    .site-main ul.products li.product > a:not(.button) {
+    .site-main ul.products li.product a {
       display: block; }
+    .site-main ul.products li.product .button,
+    .site-main ul.products li.product .added_to_cart {
+      display: inline-block; }
   .site-main .columns-2 ul.products li.product {
     width: 47.4025974026%;
     float: left;

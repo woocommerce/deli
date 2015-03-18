@@ -714,8 +714,13 @@ button.menu-toggle {
 					right: .618em;
 				}
 
-				> a:not(.button) {
+				a {
 					display: block;
+				}
+
+				.button,
+				.added_to_cart {
+					display: inline-block;
 				}
 			}
 		}
