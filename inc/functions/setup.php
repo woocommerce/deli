@@ -30,6 +30,7 @@ function bs_enqueue_child_styles() {
 
     wp_enqueue_style( 'bs-style', get_stylesheet_uri(), array( 'storefront-style' ), $bs_version );
     wp_enqueue_style( 'lato', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic,900', array( 'bs-style' ) );
+    wp_enqueue_style( 'kalam', '//fonts.googleapis.com/css?family=Kalam:400,700', array( 'bs-style' ) );
 }
 
 /**
