@@ -19,7 +19,7 @@ function storganic_color_black( $color ) {
  * @return  string color
  */
 function storganic_color_blue( $color ) {
-	$color = '#0181b7';
+	$color = '#2d7893';
 	return $color;
 }
 
@@ -28,7 +28,16 @@ function storganic_color_blue( $color ) {
  * @return  string color
  */
 function storganic_color_chocolate( $color ) {
-	$color = '#7D5D4E';
+	$color = '#3f362d';
+	return $color;
+}
+
+/**
+ * Camelot
+ * @return  string color
+ */
+function storganic_color_camelot( $color ) {
+	$color = '#91385c';
 	return $color;
 }
 
@@ -37,7 +46,7 @@ function storganic_color_chocolate( $color ) {
  * @return  string color
  */
 function storganic_color_sage( $color ) {
-	$color = '#98a98b';
+	$color = '#677f10';
 	return $color;
 }
 
