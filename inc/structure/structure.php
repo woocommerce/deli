@@ -1,23 +1,23 @@
 <?php
 /**
- * Book Store structural functions
+ * Storganic structural functions
  *
- * @package book store
+ * @package storganic
  */
 
 /**
  * Primary navigation wrapper
  * @return void
  */
-function bs_primary_navigation_wrapper() {
-	echo '<section class="bs-primary-navigation">';
+function storganic_primary_navigation_wrapper() {
+	echo '<section class="storganic-primary-navigation">';
 }
 
 /**
  * Primary navigation wrapper close
  * @return void
  */
-function bs_primary_navigation_wrapper_close() {
+function storganic_primary_navigation_wrapper_close() {
 	echo '</section>';
 }
 
@@ -25,15 +25,15 @@ function bs_primary_navigation_wrapper_close() {
  * Content wrapper
  * @return void
  */
-function bs_content_wrapper() {
-	echo '<div class="bs-content-wrapper">';
+function storganic_content_wrapper() {
+	echo '<div class="storganic-content-wrapper">';
 }
 
 /**
  * Content wrapper close
  * @return void
  */
-function bs_content_wrapper_close() {
+function storganic_content_wrapper_close() {
 	echo '</div>';
 }
 
@@ -41,7 +41,7 @@ function bs_content_wrapper_close() {
  * Products per page
  * @return int products to display per page
  */
-function bs_products_per_page( $per_page ) {
+function storganic_products_per_page( $per_page ) {
 	$per_page = 12;
 	return intval( $per_page );
 }

@@ -1,7 +1,7 @@
 /*
-Theme Name:		Book Store
+Theme Name:		Storganic
 Theme URI:		https://wordpress.org/themes/storefront
-Description:	A Storefront child theme for Book Stores. Books Store features a detailed, tactile design with various visual nods at the printed page. If you're selling Books with WooCommerce, give Book Store a spin!
+Description:	A Storefront child theme for WooCommerce shops selling organic goods. Storganic features a texturised, tactile design, perfect for natural goods. It has an informal, natural and friendly aesthetic making it a good choice for stores selling handmade products as well.
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
@@ -9,11 +9,11 @@ Version:		1.0.0
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, dark, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
-Text Domain:	book-store
+Text Domain:	storganic
 */
 
 
-/* =Book Store styles starts here
+/* =Storganic styles starts here
 -------------------------------------------------------------- */
 
 @import 'bourbon';
@@ -165,7 +165,7 @@ button.menu-toggle {
 	margin-bottom: 0;
 }
 
-.bs-primary-navigation {
+.storganic-primary-navigation {
 	clear: both;
 	background: #B64902;
 	@include clearfix;
@@ -233,7 +233,7 @@ button.menu-toggle {
 	padding: 0 1em;
 }
 
-.bs-content-wrapper {
+.storganic-content-wrapper {
 	@include clearfix;
 }
 
@@ -490,7 +490,7 @@ button.menu-toggle {
 
 // Checkout Customiser compatibility
 .woocommerce-checkout.scc-distraction-free-checkout {
-	.bs-primary-navigation {
+	.storganic-primary-navigation {
 		display: none;
 	}
 
@@ -522,8 +522,8 @@ button.menu-toggle {
 		padding: 2.618em;
 	}
 
-	.home.blog .bs-content-wrapper,
-	.home.page:not(.page-template-template-homepage) .bs-content-wrapper {
+	.home.blog .storganic-content-wrapper,
+	.home.page:not(.page-template-template-homepage) .storganic-content-wrapper {
 		padding-top: 3.631em;
 	}
 
@@ -548,7 +548,7 @@ button.menu-toggle {
 		padding: 0;
 	}
 
-	.bs-primary-navigation {
+	.storganic-primary-navigation {
 		text-shadow: 0 1px 1px rgba(#000,.3);
 		border: 1px solid rgba(#000,.3);
 		box-shadow:

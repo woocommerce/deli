@@ -1,8 +1,8 @@
 <?php
 /**
- * Book Store engine room
+ * Storganic engine room
  *
- * @package book store
+ * @package storganic
  */
 
 /**

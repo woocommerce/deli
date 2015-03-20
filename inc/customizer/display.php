@@ -1,15 +1,15 @@
 <?php
 /**
- * Book Store custom selectors that adopt Storefront customizer settings
+ * Storganic custom selectors that adopt Storefront customizer settings
  *
- * @package book store
+ * @package storganic
  */
 
 /**
  * Add custom CSS based on settings in Storefront core
  * @return void
  */
-function bs_add_customizer_css() {
+function storganic_add_customizer_css() {
 	$header_bg_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#fcfcfc' ) ) );
 	$accent_color			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_accent_color' ) );
 	$footer_link_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_link_color', apply_filters( 'storefront_default_footer_link_color', '#96588a' ) ) );
@@ -20,7 +20,7 @@ function bs_add_customizer_css() {
 	$darken_factor		= -15;
 	$lighten_factor		= 15;
 	$style = '
-		.bs-primary-navigation {
+		.storganic-primary-navigation {
 			background:' . $header_bg_color . '; /* Old browsers */
 			background: -moz-linear-gradient(top, ' . storefront_adjust_color_brightness( $header_bg_color, $lighten_factor ) . ' 0%,' . $header_bg_color . ' 100%); /* FF3.6+ */
 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,' .  $header_bg_color . '), color-stop(100%,' .  $header_bg_color . ')); /* Chrome,Safari4+ */
@@ -48,14 +48,14 @@ function bs_add_customizer_css() {
 			color: ' . $footer_heading_color . ';
 		}';
 
-	wp_add_inline_style( 'bs-style', $style );
+	wp_add_inline_style( 'storganic-style', $style );
 }
 
 /**
  * Book store background settings
  * @return array $args the modified args.
  */
-function bs_background( $args ) {
+function storganic_background( $args ) {
 	$args['default-image'] 		= get_stylesheet_directory_uri() . '/images/wood.jpg';
 	$args['default-attachment'] = 'fixed';
 

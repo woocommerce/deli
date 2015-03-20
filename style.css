@@ -1,7 +1,7 @@
 /*
-Theme Name:		Book Store
+Theme Name:		Storganic
 Theme URI:		https://wordpress.org/themes/storefront
-Description:	A Storefront child theme for Book Stores. Books Store features a detailed, tactile design with various visual nods at the printed page. If you're selling Books with WooCommerce, give Book Store a spin!
+Description:	A Storefront child theme for WooCommerce shops selling organic goods. Storganic features a texturised, tactile design, perfect for natural goods. It has an informal, natural and friendly aesthetic making it a good choice for stores selling handmade products as well.
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
@@ -9,9 +9,9 @@ Version:		1.0.0
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, dark, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
-Text Domain:	book-store
+Text Domain:	storganic
 */
-/* =Book Store styles starts here
+/* =Storganic styles starts here
 -------------------------------------------------------------- */
 body {
   background-color: #545045;
@@ -139,16 +139,16 @@ img {
 button.menu-toggle {
   margin-bottom: 0; }
 
-.bs-primary-navigation {
+.storganic-primary-navigation {
   clear: both;
   background: #B64902;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 1.618em; }
-  .bs-primary-navigation::after {
+  .storganic-primary-navigation::after {
     clear: both;
     content: "";
     display: table; }
-  .bs-primary-navigation a {
+  .storganic-primary-navigation a {
     font-weight: 700; }
 
 .woocommerce-breadcrumb {
@@ -192,7 +192,7 @@ button.menu-toggle {
 .col-full {
   padding: 0 1em; }
 
-.bs-content-wrapper::after {
+.storganic-content-wrapper::after {
   clear: both;
   content: "";
   display: table; }
@@ -367,7 +367,7 @@ button.menu-toggle {
 .page-template-template-homepage .site-main {
   padding-top: 0; }
 
-.woocommerce-checkout.scc-distraction-free-checkout .bs-primary-navigation {
+.woocommerce-checkout.scc-distraction-free-checkout .storganic-primary-navigation {
   display: none; }
 .woocommerce-checkout.scc-distraction-free-checkout .site-header {
   margin-bottom: 0; }
@@ -388,8 +388,8 @@ button.menu-toggle {
     background-attachment: fixed;
     padding: 2.618em; }
 
-  .home.blog .bs-content-wrapper,
-  .home.page:not(.page-template-template-homepage) .bs-content-wrapper {
+  .home.blog .storganic-content-wrapper,
+  .home.page:not(.page-template-template-homepage) .storganic-content-wrapper {
     padding-top: 3.631em; }
 
   .col-full {
@@ -405,7 +405,7 @@ button.menu-toggle {
   .content-area {
     padding: 0; }
 
-  .bs-primary-navigation {
+  .storganic-primary-navigation {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.25);

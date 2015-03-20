@@ -1,15 +1,15 @@
 <?php
 /**
- * Book Store colors
+ * Storganic colors
  *
- * @package book store
+ * @package storganic
  */
 
 /**
  * Black
  * @return  string color
  */
-function bs_color_black( $color ) {
+function storganic_color_black( $color ) {
 	$color = '#111111';
 	return $color;
 }
@@ -18,7 +18,7 @@ function bs_color_black( $color ) {
  * Blue
  * @return  string color
  */
-function bs_color_blue( $color ) {
+function storganic_color_blue( $color ) {
 	$color = '#0181b7';
 	return $color;
 }
@@ -27,7 +27,7 @@ function bs_color_blue( $color ) {
  * Chocolate
  * @return  string color
  */
-function bs_color_chocolate( $color ) {
+function storganic_color_chocolate( $color ) {
 	$color = '#7D5D4E';
 	return $color;
 }
@@ -36,7 +36,7 @@ function bs_color_chocolate( $color ) {
  * Sage
  * @return  string color
  */
-function bs_color_sage( $color ) {
+function storganic_color_sage( $color ) {
 	$color = '#98a98b';
 	return $color;
 }
@@ -45,7 +45,7 @@ function bs_color_sage( $color ) {
  * Jasper
  * @return  string color
  */
-function bs_color_jasper( $color ) {
+function storganic_color_jasper( $color ) {
 	$color = '#D28779';
 	return $color;
 }
@@ -54,12 +54,12 @@ function bs_color_jasper( $color ) {
  * Gold
  * @return  string color
  */
-function bs_color_gold( $color ) {
+function storganic_color_gold( $color ) {
 	$color = '#999e43';
 	return $color;
 }
 
-function bs_color_orange( $color ) {
+function storganic_color_orange( $color ) {
 	$color = '#B64902';
 	return $color;
 }
@@ -68,7 +68,7 @@ function bs_color_orange( $color ) {
  * Leather
  * @return  string color
  */
-function bs_color_leather( $color ) {
+function storganic_color_leather( $color ) {
 	$color = '#545045';
 	return $color;
 }
@@ -77,7 +77,7 @@ function bs_color_leather( $color ) {
  * Tan
  * @return  strong color
  */
-function bs_color_tan( $color ) {
+function storganic_color_tan( $color ) {
 	$color = '#dbd3bc';
 	return $color;
 }
@@ -86,7 +86,7 @@ function bs_color_tan( $color ) {
  * White
  * @return  string color
  */
-function bs_color_white( $color ) {
+function storganic_color_white( $color ) {
 	$color = '#ffffff';
 	return $color;
 }
@@ -95,7 +95,7 @@ function bs_color_white( $color ) {
  * English winter
  * @return  string color
  */
-function bs_color_english_winter( $color ) {
+function storganic_color_english_winter( $color ) {
 	$color = '#777777';
 	return $color;
 }
@@ -104,7 +104,7 @@ function bs_color_english_winter( $color ) {
  * Charcoal
  * @return  string color
  */
-function bs_color_charcoal( $color ) {
+function storganic_color_charcoal( $color ) {
 	$color = '#2b2b2b';
 	return $color;
 }
@@ -113,7 +113,7 @@ function bs_color_charcoal( $color ) {
  * Asphalt
  * @return  string color
  */
-function bs_color_asphalt( $color ) {
+function storganic_color_asphalt( $color ) {
 	$color = '#303030';
 	return $color;
 }
@@ -122,7 +122,7 @@ function bs_color_asphalt( $color ) {
  * Newspaper
  * @return  string color
  */
-function bs_color_newspaper( $color ) {
+function storganic_color_newspaper( $color ) {
 	$color = '#eeeeee';
 	return $color;
 }
