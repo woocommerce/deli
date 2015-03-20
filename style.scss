@@ -104,7 +104,7 @@ input[type="submit"],
 	border: 1px solid rgba(#000,.2);
 	box-shadow:
 		inset 0 -2px 1em rgba(#000,.1),
-		0 1px 1px rgba(0,0,0,0.15);
+		0 1px 1px rgba(0,0,0,0.1);
 	border-radius: 2px;
 
 	&:hover {
@@ -115,7 +115,7 @@ input[type="submit"],
 		border: 1px solid rgba(#000,.2);
 		box-shadow:
 			inset 0 -2px 1em rgba(#000,.1),
-			0 1px 1px rgba(0,0,0,0.15);
+			0 1px 1px rgba(0,0,0,0.1);
 
 		&:hover {
 			border: 1px solid rgba(#000,.2);
@@ -182,7 +182,7 @@ button.menu-toggle {
 	box-shadow: 0 1px 0 rgba(#fff,.05);
 	color: rgba(#fff,.7);
 	text-shadow: 0 1px 1px rgba(#000,.2);
-	margin-bottom: 5.874em;
+	margin-bottom: 2.618em;
 
 	a {
 		font-weight: 700;
@@ -281,7 +281,7 @@ button.menu-toggle {
 }
 
 .content-area {
-	@include background-image(linear-gradient(left, rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.025) 50%,rgba(0,0,0,0.01) 50%,rgba(0,0,0,0.005) 100%));
+	background: url(images/paper.png) #f9f9f9;
 	border-radius: 2px;
 	box-shadow:
 		inset 0 0 0 3px rgba(#000,.05),
@@ -323,20 +323,17 @@ button.menu-toggle {
 		&:before {
 			right: -4px;
 			top: 4px;
-			left: -4px;
+			left: 4px;
 			bottom: -4px;
 			box-shadow:
-				0 1px 1.618em rgba(#000,.3),
-				0 1px 0 .3em #373328,
-				0 2px 0 .4em #191813,
-				0 .236em 1em rgba(#000,.4);
+				0 1px 2px rgba(#000,.3);
 
 		}
 
 		&:after {
 			right: -2px;
 			top: 2px;
-			left: -2px;
+			left: 2px;
 			bottom: -2px;
 		}
 	}
@@ -425,7 +422,7 @@ button.menu-toggle {
 			font-family: "FontAwesome";
 			content: "\f02e";
 			position: absolute;
-			top: -5px;
+			top: -6px;
 			left: 0;
 			width: 100%;
 			height: 1em;
@@ -556,7 +553,7 @@ button.menu-toggle {
 		border: 1px solid rgba(#000,.3);
 		box-shadow:
 			inset 0 0 0 1px rgba(#fff,.1),
-			0 1px 4px rgba(0,0,0,0.25);
+			0 1px 1px rgba(0,0,0,0.25);
 		border-radius: 4px;
 	}
 
@@ -598,13 +595,11 @@ button.menu-toggle {
 	.main-navigation {
 		ul.menu,
 		ul.nav-menu {
-			border-right: 1px solid rgba(#fff,.05);
 			@include clearfix;
 			float: left;
 
 			> li {
 				border-right: 1px solid rgba(#000,.1);
-				border-left: 1px solid rgba(#fff,.05);
 				float: left;
 
 				> a {
@@ -705,6 +700,17 @@ button.menu-toggle {
 		}
 	}
 
+	.widget-area .widget {
+		.sph-hero,
+		.sprh-hero {
+			text-shadow: none;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
 	.sph-hero,
 	.sprh-hero {
 		.col-full {
@@ -745,8 +751,7 @@ button.menu-toggle {
 					background: #fff;
 					border-radius: 2px;
 					padding: .618em;
-					box-shadow:
-						0 1px 3px rgba(0,0,0,0.2);
+					box-shadow: 0 1px 1px rgba(#000,.1);
 				}
 
 				.onsale {
@@ -870,7 +875,7 @@ button.menu-toggle {
 				img {
 					padding: 1em;
 					background: #fff;
-					box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+					box-shadow: 0 1px 1px rgba(#000,.1);
 				}
 
 				.thumbnails {
@@ -979,6 +984,7 @@ button.menu-toggle {
 		.content-area {
 			@include span(9 of 12 wider);
 			@include bleed(gutter());
+			margin-top: 0;
 		}
 
 		.widget-area {
@@ -992,6 +998,7 @@ button.menu-toggle {
 		.content-area {
 			@include span(last 9 of 12 wider);
 			@include bleed(gutter());
+			margin-top: 0;
 		}
 
 		.widget-area {
@@ -1022,6 +1029,7 @@ button.menu-toggle {
 		.content-area {
 			@include span(12 wider);
 			@include bleed(gutter());
+			margin-top: 0;
 		}
 	}
 }

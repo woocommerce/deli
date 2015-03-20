@@ -36,7 +36,7 @@ function bs_set_theme_mods() {
 	remove_theme_mod( 'storefront_footer_background_color' );
 
 	// Set the content background color on activation
-	set_theme_mod( 'sd_content_background_color', '#fff' );
+	set_theme_mod( 'sd_content_background_color', '#f9f9f9' );
 
 	// Set the product column setting in the WooCommerce customiser extension
 	set_theme_mod( 'swc_product_columns', 4 );
