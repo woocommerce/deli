@@ -1,14 +1,14 @@
 /*
 Theme Name:		Storganic
 Theme URI:		https://wordpress.org/themes/storefront
-Description:	A Storefront child theme for WooCommerce shops selling organic goods. Storganic features a texturised, vibrant design, perfect for natural goods. It has an informal, organic and friendly aesthetic making it a good choice for stores selling handmade products as well.
+Description:	Storganic is a Storefront child theme featuring a texturised, earthy design, perfect for stores selling natural, organic or hand made goods.
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
 Version:		1.0.0
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
-Tags:			light, dark, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
+Tags:			light, green, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
 Text Domain:	storganic
 */
 /* =Storganic styles starts here
@@ -16,6 +16,34 @@ Text Domain:	storganic
 body {
   background-color: #545045;
   font-size: .857em; }
+  body:before, body:after {
+    content: "";
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 99999; }
+  body:after {
+    top: auto;
+    bottom: 0; }
+  body.admin-bar:before {
+    top: 32px; }
+
+html:before, html:after {
+  content: "";
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1em;
+  background-color: rgba(0, 0, 0, 0.1); }
+html:after {
+  left: auto;
+  right: 0; }
 
 body,
 button,
@@ -198,9 +226,10 @@ button.menu-toggle {
   display: table; }
 
 .storefront-product-section {
-  border-bottom-width: 2px;
-  border-bottom-style: dashed;
-  border-bottom-color: rgba(0, 0, 0, 0.05); }
+  border-bottom-width: 0;
+  margin-bottom: 1.618em; }
+  .storefront-product-section ul.products {
+    margin-bottom: 0; }
 
 .hentry {
   border-bottom-width: 1px; }
@@ -229,7 +258,7 @@ button.menu-toggle {
 
 .content-area {
   background: url(images/paper.png) #f9f9f9;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.5);
   position: relative;
   margin-bottom: 3.631em !important;
@@ -253,7 +282,7 @@ button.menu-toggle {
     position: absolute;
     z-index: -2;
     background-color: #fff;
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
   .content-area .site-main:before {
     right: -4px;
@@ -283,9 +312,15 @@ button.menu-toggle {
     padding: 1.618em;
     background: transparent !important; }
 
-.sprh-hero .col-full,
-.sph-hero .col-full {
-  padding: 1.618em; }
+.sprh-hero,
+.sph-hero {
+  border-radius: 4px; }
+  .sprh-hero .col-full,
+  .sph-hero .col-full {
+    padding: 1.618em; }
+  .sprh-hero .overlay,
+  .sph-hero .overlay {
+    border-radius: 4px; }
 
 .comment-text .description {
   padding: 1em;
@@ -311,8 +346,9 @@ button.menu-toggle {
 
 .widget-area .widget {
   padding: 2.618em 1em 1em 1em;
-  border-radius: 3px;
-  border: 3px dotted rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-top: 2px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
   background-color: rgba(255, 255, 255, 0.6);
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
@@ -323,7 +359,7 @@ button.menu-toggle {
     font-family: "FontAwesome";
     content: "\f02e";
     position: absolute;
-    top: -6px;
+    top: -5px;
     left: 0;
     width: 100%;
     height: 1em;
@@ -384,6 +420,11 @@ button.menu-toggle {
     box-shadow: none; }
 
 @media screen and (min-width: 768px) {
+  body:before, body:after,
+  html:before,
+  html:after {
+    display: block; }
+
   .site {
     background-attachment: fixed;
     padding: 2.618em; }
@@ -408,7 +449,8 @@ button.menu-toggle {
   .storganic-primary-navigation {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.25);
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.15);
     border-radius: 4px; }
 
   .site-branding,
@@ -465,8 +507,7 @@ button.menu-toggle {
   .site-header-cart {
     border-left: 1px solid rgba(0, 0, 0, 0.1); }
     .site-header-cart .cart-contents {
-      font-weight: 900;
-      border-left: 1px solid rgba(255, 255, 255, 0.05); }
+      font-weight: 900; }
       .site-header-cart .cart-contents .count {
         font-weight: 700; }
     .site-header-cart .widget_shopping_cart {
@@ -646,10 +687,9 @@ button.menu-toggle {
     .single-product .woocommerce-tabs ul.tabs a {
       font-weight: 700; }
   .single-product .woocommerce-tabs .panel {
-    width: 41.5584415584%;
+    width: 53.2467532468%;
     float: right;
-    margin-right: 0;
-    margin-left: 11.6883116883%; }
+    margin-right: 0; }
 
   .storefront-full-width-content.single-product div.product .images {
     width: 48.0769230769%;
