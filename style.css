@@ -8,7 +8,7 @@ Template:		storefront
 Version:		1.0.0
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
-Tags:			light, green, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
+Tags:			light, green, brown, two-columns, right-sidebar, left-sidebar, responsive-layout
 Text Domain:	storganic
 */
 /* =Storganic styles starts here
@@ -142,7 +142,7 @@ button.menu-toggle {
 
 .storganic-primary-navigation {
   clear: both;
-  background: #B64902;
+  background: #ce6102;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 1.618em;
   text-shadow: none;

@@ -33,7 +33,7 @@ add_filter( 'storefront_default_header_text_color', 			'storganic_color_white' )
 add_filter( 'storefront_default_button_background_color', 		'storganic_color_blue' );
 add_filter( 'storefront_default_button_text_color', 			'storganic_color_white' );
 
-add_filter( 'storefront_default_button_alt_background_color', 	'storganic_color_pink' );
+add_filter( 'storefront_default_button_alt_background_color', 	'storganic_color_orange' );
 add_filter( 'storefront_default_button_alt_text_color', 		'storganic_color_white' );
 
 add_filter( 'storefront_default_footer_link_color', 			'storganic_color_tan' );

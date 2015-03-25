@@ -78,7 +78,7 @@ function storganic_color_gold( $color ) {
 }
 
 function storganic_color_orange( $color ) {
-	$color = '#B64902';
+	$color = '#ce6102';
 	return $color;
 }
 
