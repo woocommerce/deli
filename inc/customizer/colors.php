@@ -19,7 +19,7 @@ function storganic_color_black( $color ) {
  * @return  string color
  */
 function storganic_color_blue( $color ) {
-	$color = '#2d7893';
+	$color = '#69adb5';
 	return $color;
 }
 
@@ -29,6 +29,15 @@ function storganic_color_blue( $color ) {
  */
 function storganic_color_chocolate( $color ) {
 	$color = '#3f362d';
+	return $color;
+}
+
+/**
+ * Pink
+ * @return  string color
+ */
+function storganic_color_pink( $color ) {
+	$color = '#c98db5';
 	return $color;
 }
 
@@ -78,7 +87,7 @@ function storganic_color_orange( $color ) {
  * @return  string color
  */
 function storganic_color_leather( $color ) {
-	$color = '#545045';
+	$color = '#CCB798';
 	return $color;
 }
 

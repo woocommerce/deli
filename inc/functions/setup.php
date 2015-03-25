@@ -29,8 +29,10 @@ function storganic_enqueue_child_styles() {
 	global $storganic_version;
 
     wp_enqueue_style( 'storganic-style', get_stylesheet_uri(), array( 'storefront-style' ), $storganic_version );
-    wp_enqueue_style( 'lato', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic,900', array( 'storganic-style' ) );
+    wp_enqueue_style( 'copse', '//fonts.googleapis.com/css?family=Copse', array( 'storganic-style' ) );
+    wp_enqueue_style( 'anonymous-pro', '//fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic,700', array( 'storganic-style' ) );
     wp_enqueue_style( 'kalam', '//fonts.googleapis.com/css?family=Kalam:400,700', array( 'storganic-style' ) );
+    wp_enqueue_style( 'oswald', '//fonts.googleapis.com/css?family=Oswald', array( 'storganic-style' ) );
 }
 
 /**
