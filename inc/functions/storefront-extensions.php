@@ -52,7 +52,12 @@ function storganic_add_extension_customizer_css() {
 	$style = '
 		.content-area {
 			background-color: ' . $content_background_color . ';
-		}';
+		}
+
+		.site-main:before {
+   			background: -webkit-linear-gradient(rgba(#000,0) 0%, transparent 0%), -webkit-linear-gradient(135deg, ' . $content_background_color . ' 33.33%, transparent 33.33%) 0 0%, rgba(#000,0) -webkit-linear-gradient(45deg, ' . $content_background_color . ' 33.33%, rgba(#000,0) 33.33%) 0 0%;
+		}
+		';
 
 	wp_add_inline_style( 'storganic-style', $style );
 }

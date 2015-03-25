@@ -143,9 +143,9 @@ input[type="submit"],
 .site-header-cart .widget_shopping_cart a.button {
 	box-shadow: none;
 	border-radius: 3px;
-	font-weight: 700;
+	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
-	font-family: $handwritten;
+	font-family: $condensed;
 }
 
 input[type="text"],
@@ -276,7 +276,8 @@ button.menu-toggle {
 }
 
 .hentry {
-	border-bottom-width: 1px;
+	border-bottom-width: 2px;
+	border-bottom-style: dotted;
 
 	.entry-header {
 		border: 0;
@@ -314,7 +315,6 @@ button.menu-toggle {
 	margin-bottom: 3.631em !important;
 	padding: 1em;
 	box-shadow:
-		inset 0 0 0 .618em rgba(#ccc,.15),
 		0 .327em 0 rgba(#000,.075);
 
 	&:after,
@@ -333,6 +333,19 @@ button.menu-toggle {
 		border-right-color: transparent;
 		border-bottom-color: #fff;
 		border-left-width: 0;
+	}
+
+	.site-main:before {
+		content:"";
+	    display:block;
+	    position:absolute;
+	    bottom:-9px;
+	    left:0;
+	    width:100%;
+	    height:9px;
+   		background: -webkit-linear-gradient(rgba(#000,0) 0%, transparent 0%), -webkit-linear-gradient(135deg, #f9f9f9 33.33%, transparent 33.33%) 0 0%, rgba(#000,0) -webkit-linear-gradient(45deg, #f9f9f9 33.33%, rgba(#000,0) 33.33%) 0 0%;
+	    background-size: 0px 100%, 9px 9px, 9px 9px;
+	    @include transform(rotate(180deg));
 	}
 }
 
@@ -409,17 +422,20 @@ button.menu-toggle {
 	.widget {
 		padding: 2.618em 1em 1em 1em;
 		position: relative;
-		background: url(images/paper.png) rgba(#fff,.7);
+		background: rgba(#fff,.7);
 		font-family: $handwritten;
 
 		&:after {
 			content: "";
-			display: block;
-			position: absolute;
-			bottom: -3px;
-			left: 0;
-			width: 100%;
-			border-bottom: 3px dotted rgba(#fff,.7);
+		    display: block;
+		    position: absolute;
+		    bottom: -7px;
+		    left: 0;
+		    width: 100%;
+		    height: 7px;
+	   		background: -webkit-linear-gradient(rgba(#000,0) 0%, transparent 0%), -webkit-linear-gradient(135deg, rgba(#fff,.7) 33.33%, transparent 33.33%) 0 0%, rgba(#000,0) -webkit-linear-gradient(45deg, rgba(#fff,.7) 33.33%, rgba(#000,0) 33.33%) 0 0%;
+		    background-size: 0px 100%, 9px 9px, 9px 9px;
+		    @include transform(rotate(180deg));
 		}
 
 		&:before {
@@ -888,8 +904,10 @@ button.menu-toggle {
 				}
 			}
 		}
+	}
 
-
+	#reviews .commentlist li .description {
+		padding: 1.618em;
 	}
 
 	.storefront-full-width-content.single-product {
