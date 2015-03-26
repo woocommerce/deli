@@ -197,7 +197,7 @@ button.menu-toggle {
       padding-bottom: 0; }
 
 .col-full {
-  padding: 0 1em; }
+  padding: 0; }
 
 .storganic-content-wrapper::after {
   clear: both;
