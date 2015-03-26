@@ -80,7 +80,7 @@ h6 {
 h1,
 h2,
 h3 {
-  font-weight: 900; }
+  font-weight: 700; }
 
 .widget h1,
 .widget h2,
@@ -525,7 +525,7 @@ button.menu-toggle {
     top: 1em; }
 
   .woocommerce-pagination a {
-    font-weight: 900; }
+    font-weight: 700; }
 
   .page-template-template-homepage .content-area .sph-hero,
   .page-template-template-homepage .content-area .sprh-hero {
@@ -657,7 +657,7 @@ button.menu-toggle {
       float: right;
       margin-right: 0; }
       .single-product div.product .summary .price {
-        font-weight: 900; }
+        font-weight: 700; }
 
   #reviews .commentlist li .description {
     padding: 1.618em; }
