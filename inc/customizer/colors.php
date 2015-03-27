@@ -96,7 +96,7 @@ function storganic_color_leather( $color ) {
  * @return  strong color
  */
 function storganic_color_tan( $color ) {
-	$color = '#dbd3bc';
+	$color = '#e4decd';
 	return $color;
 }
 

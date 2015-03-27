@@ -10,11 +10,14 @@
  * @return void
  */
 function storganic_add_customizer_css() {
-	$header_bg_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#fcfcfc' ) ) );
-	$accent_color			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_accent_color' ) );
-	$footer_link_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_link_color', apply_filters( 'storefront_default_footer_link_color', '#96588a' ) ) );
-	$footer_heading_color 	= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_heading_color', apply_filters( 'storefront_default_footer_heading_color', '#494c50' ) ) );
-	$footer_text_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_text_color', apply_filters( 'storefront_default_footer_text_color', '#61656b' ) ) );
+	$header_bg_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#fcfcfc' ) ) );
+	$accent_color				= storefront_sanitize_hex_color( get_theme_mod( 'storefront_accent_color' ) );
+	$footer_link_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_link_color', apply_filters( 'storefront_default_footer_link_color', '#96588a' ) ) );
+	$footer_heading_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_heading_color', apply_filters( 'storefront_default_footer_heading_color', '#494c50' ) ) );
+	$footer_text_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_text_color', apply_filters( 'storefront_default_footer_text_color', '#61656b' ) ) );
+	$button_background_color 	= storefront_sanitize_hex_color( get_theme_mod( 'storefront_button_background_color', apply_filters( 'storefront_default_button_background_color', '#60646c' ) ) );
+	$button_text_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_button_text_color', apply_filters( 'storefront_default_button_text_color', '#ffffff' ) ) );
+
 
 	$darken_factor		= -15;
 	$lighten_factor		= 15;
@@ -33,6 +36,11 @@ function storganic_add_customizer_css() {
 
 		.header-widget-region a:not(.button) {
 			color: ' . $footer_link_color . ';
+		}
+
+		.single-product div.product .summary .price {
+			color: ' . $button_text_color . ';
+			background-color: ' . $button_background_color . ';
 		}
 
 		.header-widget-region h1, .header-widget-region h2, .header-widget-region h3, .header-widget-region h4, .header-widget-region h5, .header-widget-region h6 {

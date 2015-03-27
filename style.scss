@@ -97,20 +97,20 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 700;
+	font-weight: 400;
 	letter-spacing: 0 !important;
 	font-family: $serif;
 
 	a,
 	label {
-		font-weight: 700;
+		font-weight: 400;
 	}
 }
 
 h1,
 h2,
 h3 {
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .widget {
@@ -120,7 +120,7 @@ h3 {
 	h4,
 	h5,
 	h6 {
-		font-weight: 700;
+		font-weight: 400;
 	}
 }
 
@@ -129,7 +129,8 @@ h3 {
 	background-color: transparent !important;
 }
 
-a {
+a,
+.site-branding h1 a {
 	font-weight: 400;
 }
 
@@ -201,15 +202,26 @@ button.menu-toggle {
 }
 
 .woocommerce-breadcrumb {
-	border-bottom: 2px dotted rgba(#000, .1);
-	border-top: 2px dotted rgba(#000, .1);
+	border-bottom: 0;
 	color: rgba(#fff,.7);
 	text-shadow: 0 1px 1px rgba(#000,.2);
 	margin-bottom: 2.618em;
+	position: relative;
+
+	&:before {
+		content: "\f015";
+		font-family: "FontAwesome";
+		margin-right: .618em;
+		font-weight: 400;
+	}
 
 	a {
-		font-weight: 700;
+		font-weight: 400;
 		color: rgba(#fff,.9);
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -267,8 +279,23 @@ button.menu-toggle {
 }
 
 .storefront-product-section {
-	border-bottom-width: 0;
-	margin-bottom: 1.618em;
+	border-bottom-width: 2px;
+	border-bottom-style: dotted;
+	border-bottom-color: rgba(#000,.1);
+	margin-bottom: 2.618em;
+	padding-top: 1em;
+
+	h2.section-title {
+		&:before,
+		&:after {
+			display: inline-block;
+			content: " - ";
+			font-size: .618em;
+			margin: 0 1em;
+			opacity: 0.5;
+			font-weight: 700;
+		}
+	}
 
 	ul.products {
 		margin-bottom: 0;
@@ -370,6 +397,12 @@ button.menu-toggle {
 		padding: 1.618em;
 		background: transparent !important;
 	}
+
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .sprh-hero,
@@ -401,10 +434,6 @@ button.menu-toggle {
 			h3 {
 				font-size: 1.2em;
 			}
-
-			.price {
-				font-weight: 700;
-			}
 		}
 	}
 }
@@ -415,6 +444,36 @@ button.menu-toggle {
 
 .site-header-cart {
 	margin-bottom: 0;
+}
+
+// Single product
+.single-product {
+	div.product {
+		.summary {
+			.price {
+				font-weight: 400;
+				background-color: $blue;
+				color: #fff;
+				display: inline-block;
+				padding: .53em 2.244em .53em 1em;
+				@include border-right-radius(2em);
+				position: relative;
+
+				&:after {
+					display: block;
+					position: absolute;
+					content: "";
+					top: 50%;
+					right: 1em;
+					height: 6px;
+					width: 6px;
+					margin-top: -3px;
+					background-color: #fff;
+					border-radius: 100%;
+				}
+			}
+		}
+	}
 }
 
 // Widgets
@@ -467,6 +526,18 @@ button.menu-toggle {
 			padding-bottom: .618em;
 			border-bottom-width: 2px;
 			border-bottom-style: dotted;
+			border-bottom-color: rgba(#000,.2);
+			text-align: center;
+
+			&:before,
+			&:after {
+				display: inline-block;
+				content: " - ";
+				font-size: .618em;
+				margin: 0 1em;
+				opacity: 0.5;
+				font-weight: 700;
+			}
 		}
 	}
 }
@@ -610,10 +681,6 @@ button.menu-toggle {
 
 	.site-footer {
 		text-shadow: 0 1px 1px rgba(#000,0.3);
-
-		a {
-			font-weight: 700;
-		}
 
 		.footer-widgets {
 			padding-top: 0;
@@ -904,10 +971,6 @@ button.menu-toggle {
 
 			.summary {
 				@include span(last 4 of 9);
-
-				.price {
-					font-weight: 700;
-				}
 			}
 		}
 	}
@@ -1015,5 +1078,11 @@ button.menu-toggle {
 	.col-full {
 		margin-left: 0;
 		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+		font-size: .95em;
 	}
 }

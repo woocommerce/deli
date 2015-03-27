@@ -60,7 +60,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0 !important;
   font-family: "Copse", sans-serif; }
   h1 a,
@@ -75,12 +75,12 @@ h6 {
   h5 label,
   h6 a,
   h6 label {
-    font-weight: 700; }
+    font-weight: 400; }
 
 h1,
 h2,
 h3 {
-  font-weight: 700; }
+  font-weight: 400; }
 
 .widget h1,
 .widget h2,
@@ -88,13 +88,14 @@ h3 {
 .widget h4,
 .widget h5,
 .widget h6 {
-  font-weight: 700; }
+  font-weight: 400; }
 
 .site-header,
 .site-footer {
   background-color: transparent !important; }
 
-a {
+a,
+.site-branding h1 a {
   font-weight: 400; }
 
 button,
@@ -155,14 +156,21 @@ button.menu-toggle {
     font-weight: 400; }
 
 .woocommerce-breadcrumb {
-  border-bottom: 2px dotted rgba(0, 0, 0, 0.1);
-  border-top: 2px dotted rgba(0, 0, 0, 0.1);
+  border-bottom: 0;
   color: rgba(255, 255, 255, 0.7);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 2.618em; }
+  margin-bottom: 2.618em;
+  position: relative; }
+  .woocommerce-breadcrumb:before {
+    content: "\f015";
+    font-family: "FontAwesome";
+    margin-right: .618em;
+    font-weight: 400; }
   .woocommerce-breadcrumb a {
-    font-weight: 700;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.9); }
+    .woocommerce-breadcrumb a:hover {
+      text-decoration: underline; }
 
 .woocommerce-tabs {
   border-style: dotted;
@@ -205,8 +213,18 @@ button.menu-toggle {
   display: table; }
 
 .storefront-product-section {
-  border-bottom-width: 0;
-  margin-bottom: 1.618em; }
+  border-bottom-width: 2px;
+  border-bottom-style: dotted;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.618em;
+  padding-top: 1em; }
+  .storefront-product-section h2.section-title:before, .storefront-product-section h2.section-title:after {
+    display: inline-block;
+    content: " - ";
+    font-size: .618em;
+    margin: 0 1em;
+    opacity: 0.5;
+    font-weight: 700; }
   .storefront-product-section ul.products {
     margin-bottom: 0; }
 
@@ -284,6 +302,8 @@ button.menu-toggle {
   .site-footer .col-full {
     padding: 1.618em;
     background: transparent !important; }
+  .site-footer a:hover {
+    text-decoration: underline; }
 
 .sprh-hero .col-full,
 .sph-hero .col-full {
@@ -303,14 +323,33 @@ button.menu-toggle {
 
 .site-main ul.products li.product h3 {
   font-size: 1.2em; }
-.site-main ul.products li.product .price {
-  font-weight: 700; }
 
 .woocommerce-breadcrumb {
   margin-top: 0; }
 
 .site-header-cart {
   margin-bottom: 0; }
+
+.single-product div.product .summary .price {
+  font-weight: 400;
+  background-color: #69adb5;
+  color: #fff;
+  display: inline-block;
+  padding: .53em 2.244em .53em 1em;
+  border-bottom-right-radius: 2em;
+  border-top-right-radius: 2em;
+  position: relative; }
+  .single-product div.product .summary .price:after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 1em;
+    height: 6px;
+    width: 6px;
+    margin-top: -3px;
+    background-color: #fff;
+    border-radius: 100%; }
 
 .widget-area .widget {
   padding: 2.618em 1em 1em 1em;
@@ -364,7 +403,16 @@ button.menu-toggle {
   .widget-area .widget h3.widget-title {
     padding-bottom: .618em;
     border-bottom-width: 2px;
-    border-bottom-style: dotted; }
+    border-bottom-style: dotted;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    text-align: center; }
+    .widget-area .widget h3.widget-title:before, .widget-area .widget h3.widget-title:after {
+      display: inline-block;
+      content: " - ";
+      font-size: .618em;
+      margin: 0 1em;
+      opacity: 0.5;
+      font-weight: 700; }
 
 .widget_product_categories ul li:before,
 .widget_categories ul li:before {
@@ -462,8 +510,6 @@ button.menu-toggle {
 
   .site-footer {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
-    .site-footer a {
-      font-weight: 700; }
     .site-footer .footer-widgets {
       padding-top: 0; }
 
@@ -656,8 +702,6 @@ button.menu-toggle {
       width: 41.1764705882%;
       float: right;
       margin-right: 0; }
-      .single-product div.product .summary .price {
-        font-weight: 700; }
 
   #reviews .commentlist li .description {
     padding: 1.618em; }
@@ -741,3 +785,6 @@ button.menu-toggle {
   .col-full {
     margin-left: 0;
     margin-right: 0; } }
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: .95em; } }
