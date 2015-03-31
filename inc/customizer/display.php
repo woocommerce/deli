@@ -1,15 +1,15 @@
 <?php
 /**
- * Storganic custom selectors that adopt Storefront customizer settings
+ * Artisan custom selectors that adopt Storefront customizer settings
  *
- * @package storganic
+ * @package artisan
  */
 
 /**
  * Add custom CSS based on settings in Storefront core
  * @return void
  */
-function storganic_add_customizer_css() {
+function artisan_add_customizer_css() {
 	$navigation_bg_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#fcfcfc' ) ) );
 	$accent_color				= storefront_sanitize_hex_color( get_theme_mod( 'storefront_accent_color' ) );
 	$footer_link_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_link_color', apply_filters( 'storefront_default_footer_link_color', '#96588a' ) ) );
@@ -18,12 +18,12 @@ function storganic_add_customizer_css() {
 	$button_background_color 	= storefront_sanitize_hex_color( get_theme_mod( 'storefront_button_background_color', apply_filters( 'storefront_default_button_background_color', '#60646c' ) ) );
 	$button_text_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_button_text_color', apply_filters( 'storefront_default_button_text_color', '#ffffff' ) ) );
 
-	$header_bg_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storganic_header_background_color', '' ) );
+	$header_bg_color 			= storefront_sanitize_hex_color( get_theme_mod( 'artisan_header_background_color', '' ) );
 
 	$darken_factor		= -15;
 	$lighten_factor		= 15;
 	$style = '
-		.storganic-primary-navigation {
+		.artisan-primary-navigation {
 			background:' . $navigation_bg_color . ';
 		}
 
@@ -60,14 +60,14 @@ function storganic_add_customizer_css() {
 		}
 	}
 
-	wp_add_inline_style( 'storganic-style', $style );
+	wp_add_inline_style( 'artisan-style', $style );
 }
 
 /**
  * Book store background settings
  * @return array $args the modified args.
  */
-function storganic_background( $args ) {
+function artisan_background( $args ) {
 	$args['default-image'] 		= get_stylesheet_directory_uri() . '/images/cardboard.png';
 	$args['default-attachment'] = 'fixed';
 

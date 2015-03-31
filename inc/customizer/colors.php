@@ -1,15 +1,15 @@
 <?php
 /**
- * Storganic colors
+ * Artisan colors
  *
- * @package storganic
+ * @package artisan
  */
 
 /**
  * Black
  * @return  string color
  */
-function storganic_color_black( $color ) {
+function artisan_color_black( $color ) {
 	$color = '#111111';
 	return $color;
 }
@@ -18,7 +18,7 @@ function storganic_color_black( $color ) {
  * Blue
  * @return  string color
  */
-function storganic_color_blue( $color ) {
+function artisan_color_blue( $color ) {
 	$color = '#69adb5';
 	return $color;
 }
@@ -27,7 +27,7 @@ function storganic_color_blue( $color ) {
  * Chocolate
  * @return  string color
  */
-function storganic_color_chocolate( $color ) {
+function artisan_color_chocolate( $color ) {
 	$color = '#3f362d';
 	return $color;
 }
@@ -36,7 +36,7 @@ function storganic_color_chocolate( $color ) {
  * Pink
  * @return  string color
  */
-function storganic_color_pink( $color ) {
+function artisan_color_pink( $color ) {
 	$color = '#c98db5';
 	return $color;
 }
@@ -45,7 +45,7 @@ function storganic_color_pink( $color ) {
  * Camelot
  * @return  string color
  */
-function storganic_color_camelot( $color ) {
+function artisan_color_camelot( $color ) {
 	$color = '#91385c';
 	return $color;
 }
@@ -54,7 +54,7 @@ function storganic_color_camelot( $color ) {
  * Sage
  * @return  string color
  */
-function storganic_color_sage( $color ) {
+function artisan_color_sage( $color ) {
 	$color = '#677f10';
 	return $color;
 }
@@ -63,7 +63,7 @@ function storganic_color_sage( $color ) {
  * Jasper
  * @return  string color
  */
-function storganic_color_jasper( $color ) {
+function artisan_color_jasper( $color ) {
 	$color = '#D28779';
 	return $color;
 }
@@ -72,12 +72,12 @@ function storganic_color_jasper( $color ) {
  * Gold
  * @return  string color
  */
-function storganic_color_gold( $color ) {
+function artisan_color_gold( $color ) {
 	$color = '#999e43';
 	return $color;
 }
 
-function storganic_color_orange( $color ) {
+function artisan_color_orange( $color ) {
 	$color = '#b64902';
 	return $color;
 }
@@ -86,7 +86,7 @@ function storganic_color_orange( $color ) {
  * Leather
  * @return  string color
  */
-function storganic_color_leather( $color ) {
+function artisan_color_leather( $color ) {
 	$color = '#CCB798';
 	return $color;
 }
@@ -95,7 +95,7 @@ function storganic_color_leather( $color ) {
  * Tan
  * @return  strong color
  */
-function storganic_color_tan( $color ) {
+function artisan_color_tan( $color ) {
 	$color = '#e4decd';
 	return $color;
 }
@@ -104,7 +104,7 @@ function storganic_color_tan( $color ) {
  * White
  * @return  string color
  */
-function storganic_color_white( $color ) {
+function artisan_color_white( $color ) {
 	$color = '#ffffff';
 	return $color;
 }
@@ -113,7 +113,7 @@ function storganic_color_white( $color ) {
  * English winter
  * @return  string color
  */
-function storganic_color_english_winter( $color ) {
+function artisan_color_english_winter( $color ) {
 	$color = '#777777';
 	return $color;
 }
@@ -122,7 +122,7 @@ function storganic_color_english_winter( $color ) {
  * Charcoal
  * @return  string color
  */
-function storganic_color_charcoal( $color ) {
+function artisan_color_charcoal( $color ) {
 	$color = '#2b2b2b';
 	return $color;
 }
@@ -131,7 +131,7 @@ function storganic_color_charcoal( $color ) {
  * Asphalt
  * @return  string color
  */
-function storganic_color_asphalt( $color ) {
+function artisan_color_asphalt( $color ) {
 	$color = '#303030';
 	return $color;
 }
@@ -140,7 +140,7 @@ function storganic_color_asphalt( $color ) {
  * Newspaper
  * @return  string color
  */
-function storganic_color_newspaper( $color ) {
+function artisan_color_newspaper( $color ) {
 	$color = '#eeeeee';
 	return $color;
 }
