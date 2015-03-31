@@ -603,6 +603,13 @@ button.menu-toggle {
 	}
 }
 
+// Storefront Designer compatibility
+.sd-header-sticky {
+	.site-header {
+		padding-top: 5.236em;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	$horizontal_padding: 3.631em;
 

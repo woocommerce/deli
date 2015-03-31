@@ -450,6 +450,9 @@ button.menu-toggle {
     background: transparent !important;
     box-shadow: none; }
 
+.sd-header-sticky .site-header {
+  padding-top: 5.236em; }
+
 @media screen and (min-width: 768px) {
   body:before, body:after,
   html:before,
