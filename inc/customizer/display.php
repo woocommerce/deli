@@ -49,11 +49,15 @@ function storganic_add_customizer_css() {
 		}';
 
 	if ( class_exists( 'Storefront_Designer' ) ) {
-		$style .= '
-			.site-header {
-				background-color:' . $header_bg_color . ' !important;
-			}
-		';
+		$sticky 				= get_theme_mod( 'sd_header_sticky', 'default' );
+
+		if ( 'sticky-header' == $sticky ) {
+			$style .= '
+				.site-header {
+					background-color:' . $header_bg_color . ' !important;
+				}
+			';
+		}
 	}
 
 	wp_add_inline_style( 'storganic-style', $style );
