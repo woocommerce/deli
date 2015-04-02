@@ -1,15 +1,15 @@
 <?php
 /**
- * Artisan Storefront extension compatibility
+ * Deli Storefront extension compatibility
  *
- * @package artisan
+ * @package deli
  */
 
 /**
  * Remove Customizer settings added by Storefront extensions that this theme is incompatible with.
  * @return void
  */
-function artisan_customize_storefront_extensions( $wp_customize ) {
+function deli_customize_storefront_extensions( $wp_customize ) {
 	$wp_customize->remove_control( 'sd_header_layout' );
 	$wp_customize->remove_control( 'sd_fixed_width' ); // Content frame
 	$wp_customize->remove_control( 'sd_button_flat' );
@@ -24,7 +24,7 @@ function artisan_customize_storefront_extensions( $wp_customize ) {
  * Set / remove theme mods to suit this theme after activation
  * @return void
  */
-function artisan_set_theme_mods() {
+function deli_set_theme_mods() {
 	// Reset certain theme settings from the db
 	remove_theme_mod( 'sd_header_layout' );
 	remove_theme_mod( 'sd_fixed_width' ); // Content frame
@@ -46,7 +46,7 @@ function artisan_set_theme_mods() {
  * Add custom CSS based on settings in Storefront core
  * @return void
  */
-function artisan_add_extension_customizer_css() {
+function deli_add_extension_customizer_css() {
 	$content_background_color = storefront_sanitize_hex_color( get_theme_mod( 'sd_content_background_color', apply_filters( 'storefront_default_background_color', '#fcfcfc' ) ) );
 
 	$style = '
@@ -59,5 +59,5 @@ function artisan_add_extension_customizer_css() {
 		}
 		';
 
-	wp_add_inline_style( 'artisan-style', $style );
+	wp_add_inline_style( 'deli-style', $style );
 }

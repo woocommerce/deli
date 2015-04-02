@@ -1,7 +1,7 @@
 /*
-Theme Name:		Artisan
+Theme Name:		Deli
 Theme URI:		https://wordpress.org/themes/storefront
-Description:	Artisan is a Storefront child theme featuring a texturised, earthy design, perfect for stores selling natural, organic or hand made goods.
+Description:	Deli is a Storefront child theme featuring a texturised, earthy design, perfect for stores selling natural, organic or hand made goods.
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
@@ -9,11 +9,11 @@ Version:		1.0.0
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, green, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
-Text Domain:	artisan
+Text Domain:	deli
 */
 
 
-/* =Artisan styles starts here
+/* =Deli styles starts here
 -------------------------------------------------------------- */
 
 @import 'bourbon';
@@ -187,7 +187,7 @@ button.menu-toggle {
 	margin-bottom: 0;
 }
 
-.artisan-primary-navigation {
+.deli-primary-navigation {
 	clear: both;
 	background: $orange;
 	@include clearfix;
@@ -274,7 +274,7 @@ button.menu-toggle {
 	padding: 0;
 }
 
-.artisan-content-wrapper {
+.deli-content-wrapper {
 	@include clearfix;
 }
 
@@ -584,7 +584,7 @@ button.menu-toggle {
 
 // Checkout Customiser compatibility
 .woocommerce-checkout.scc-distraction-free-checkout {
-	.artisan-primary-navigation {
+	.deli-primary-navigation {
 		display: none;
 	}
 
@@ -631,8 +631,8 @@ button.menu-toggle {
 		padding: 2.618em;
 	}
 
-	.home.blog .artisan-content-wrapper,
-	.home.page:not(.page-template-template-homepage) .artisan-content-wrapper {
+	.home.blog .deli-content-wrapper,
+	.home.page:not(.page-template-template-homepage) .deli-content-wrapper {
 		padding-top: 3.631em;
 	}
 
@@ -656,7 +656,7 @@ button.menu-toggle {
 		padding: 0;
 	}
 
-	.artisan-primary-navigation {
+	.deli-primary-navigation {
 		border-top: 3px double rgba(#000,.2);
 		-webkit-font-smoothing: antialiased;
 		@include span(12 wider);

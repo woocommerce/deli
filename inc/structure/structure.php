@@ -1,23 +1,23 @@
 <?php
 /**
- * Artisan structural functions
+ * Deli structural functions
  *
- * @package artisan
+ * @package deli
  */
 
 /**
  * Primary navigation wrapper
  * @return void
  */
-function artisan_primary_navigation_wrapper() {
-	echo '<section class="artisan-primary-navigation">';
+function deli_primary_navigation_wrapper() {
+	echo '<section class="deli-primary-navigation">';
 }
 
 /**
  * Primary navigation wrapper close
  * @return void
  */
-function artisan_primary_navigation_wrapper_close() {
+function deli_primary_navigation_wrapper_close() {
 	echo '</section>';
 }
 
@@ -25,15 +25,15 @@ function artisan_primary_navigation_wrapper_close() {
  * Content wrapper
  * @return void
  */
-function artisan_content_wrapper() {
-	echo '<div class="artisan-content-wrapper">';
+function deli_content_wrapper() {
+	echo '<div class="deli-content-wrapper">';
 }
 
 /**
  * Content wrapper close
  * @return void
  */
-function artisan_content_wrapper_close() {
+function deli_content_wrapper_close() {
 	echo '</div>';
 }
 
@@ -41,7 +41,7 @@ function artisan_content_wrapper_close() {
  * Products per page
  * @return int products to display per page
  */
-function artisan_products_per_page( $per_page ) {
+function deli_products_per_page( $per_page ) {
 	$per_page = 12;
 	return intval( $per_page );
 }

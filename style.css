@@ -1,7 +1,7 @@
 /*
-Theme Name:		Artisan
+Theme Name:		Deli
 Theme URI:		https://wordpress.org/themes/storefront
-Description:	Artisan is a Storefront child theme featuring a texturised, earthy design, perfect for stores selling natural, organic or hand made goods.
+Description:	Deli is a Storefront child theme featuring a texturised, earthy design, perfect for stores selling natural, organic or hand made goods.
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
@@ -9,9 +9,9 @@ Version:		1.0.0
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, green, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
-Text Domain:	artisan
+Text Domain:	deli
 */
-/* =Artisan styles starts here
+/* =Deli styles starts here
 -------------------------------------------------------------- */
 body {
   background-color: #645846;
@@ -141,18 +141,18 @@ img.avatar {
 button.menu-toggle {
   margin-bottom: 0; }
 
-.artisan-primary-navigation {
+.deli-primary-navigation {
   clear: both;
   background: #b64902;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 1.618em;
   text-shadow: none;
   font-family: "Oswald", sans-serif; }
-  .artisan-primary-navigation::after {
+  .deli-primary-navigation::after {
     clear: both;
     content: "";
     display: table; }
-  .artisan-primary-navigation a {
+  .deli-primary-navigation a {
     font-weight: 400; }
 
 .woocommerce-breadcrumb {
@@ -207,7 +207,7 @@ button.menu-toggle {
 .col-full {
   padding: 0; }
 
-.artisan-content-wrapper::after {
+.deli-content-wrapper::after {
   clear: both;
   content: "";
   display: table; }
@@ -439,7 +439,7 @@ button.menu-toggle {
 .page-template-template-homepage .site-main {
   padding-top: 0; }
 
-.woocommerce-checkout.scc-distraction-free-checkout .artisan-primary-navigation {
+.woocommerce-checkout.scc-distraction-free-checkout .deli-primary-navigation {
   display: none; }
 .woocommerce-checkout.scc-distraction-free-checkout .site-header {
   margin-bottom: 0; }
@@ -468,8 +468,8 @@ button.menu-toggle {
     background-attachment: fixed;
     padding: 2.618em; }
 
-  .home.blog .artisan-content-wrapper,
-  .home.page:not(.page-template-template-homepage) .artisan-content-wrapper {
+  .home.blog .deli-content-wrapper,
+  .home.page:not(.page-template-template-homepage) .deli-content-wrapper {
     padding-top: 3.631em; }
 
   .col-full {
@@ -484,7 +484,7 @@ button.menu-toggle {
   .content-area {
     padding: 0; }
 
-  .artisan-primary-navigation {
+  .deli-primary-navigation {
     border-top: 3px double rgba(0, 0, 0, 0.2);
     -webkit-font-smoothing: antialiased;
     width: 108.6956521739%;
