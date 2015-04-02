@@ -691,9 +691,6 @@ button.menu-toggle {
         width: 77.7777777778%;
         float: left;
         margin-right: 11.1111111111%; }
-      .single-product div.product .images img {
-        padding: 1em;
-        background: #fff; }
       .single-product div.product .images .thumbnails {
         width: 11.1111111111%;
         float: right;
@@ -701,8 +698,6 @@ button.menu-toggle {
         .single-product div.product .images .thumbnails a.zoom {
           width: 100%;
           float: none; }
-        .single-product div.product .images .thumbnails img {
-          padding: .327em; }
     .single-product div.product .summary {
       width: 41.1764705882%;
       float: right;

@@ -957,21 +957,12 @@ button.menu-toggle {
 					@include span(4 of 5);
 				}
 
-				img {
-					padding: 1em;
-					background: #fff;
-				}
-
 				.thumbnails {
 					@include span(last 1 of 5);
 
 					a.zoom {
 						width: 100%;
 						float: none;
-					}
-
-					img {
-						padding: .327em;
 					}
 				}
 			}
