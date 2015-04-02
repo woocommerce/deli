@@ -8,7 +8,7 @@ Template:		storefront
 Version:		1.0.0
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
-Tags:			light, green, brown, two-columns, right-sidebar, left-sidebar, responsive-layout
+Tags:			light, green, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
 Text Domain:	artisan
 */
 
@@ -21,7 +21,7 @@ Text Domain:	artisan
 @import '../storefront/sass/utils/variables';
 
 $orange: 	#b64902;
-$blue: 		#69adb5;
+$blue: 		#0e7784;
 $chocolate: #7D5D4E;
 $jasper:	#D28779;
 $sage:		#98a98b;
@@ -35,7 +35,7 @@ $monospace: 'Anonymous Pro', monospace;
 $handwritten: 'Kalam';
 
 body {
-	background-color: #545045;
+	background-color: #645846;
 	font-size: .857em;
 	-webkit-font-smoothing: subpixel-antialiased;
 
@@ -341,8 +341,6 @@ button.menu-toggle {
 	position: relative;
 	margin-bottom: 3.631em !important;
 	padding: 1em;
-	box-shadow:
-		0 .327em 0 rgba(#000,.075);
 
 	&:after,
 	&:before {
@@ -385,6 +383,8 @@ button.menu-toggle {
 .header-widget-region .widget_product_search input[type=search],
 .header-widget-region .widget_product_search input[type=text] {
 	background: rgba(#000,.65);
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(#000,.5);
 	box-shadow:
 		inset 0 1px 3px rgba(#000,.3),
 		0 1px 1px rgba(#fff,.2);
@@ -438,6 +438,11 @@ button.menu-toggle {
 	}
 }
 
+.storefront-sorting {
+	border-style: dotted;
+	border-width: 2px 0;
+}
+
 .woocommerce-breadcrumb {
 	margin-top: 0;
 }
@@ -481,7 +486,7 @@ button.menu-toggle {
 	.widget {
 		padding: 2.618em 1em 1em 1em;
 		position: relative;
-		background: rgba(#fff,.7);
+		background: rgba(#fff,.85);
 		font-family: $handwritten;
 
 		&:after {
@@ -492,7 +497,7 @@ button.menu-toggle {
 		    left: 0;
 		    width: 100%;
 		    height: 7px;
-	   		background: -webkit-linear-gradient(rgba(#000,0) 0%, transparent 0%), -webkit-linear-gradient(135deg, rgba(#fff,.7) 33.33%, transparent 33.33%) 0 0%, rgba(#000,0) -webkit-linear-gradient(45deg, rgba(#fff,.7) 33.33%, rgba(#000,0) 33.33%) 0 0%;
+	   		background: -webkit-linear-gradient(rgba(#000,0) 0%, transparent 0%), -webkit-linear-gradient(135deg, rgba(#fff,.85) 33.33%, transparent 33.33%) 0 0%, rgba(#000,0) -webkit-linear-gradient(45deg, rgba(#fff,.85) 33.33%, rgba(#000,0) 33.33%) 0 0%;
 		    background-size: 0px 100%, 9px 9px, 9px 9px;
 		    @include transform(rotate(180deg));
 		}
@@ -834,11 +839,6 @@ button.menu-toggle {
 					font-weight: 700;
 				}
 
-				img {
-					background: #fff;
-					padding: .618em;
-				}
-
 				.onsale {
 					position: absolute;
 					top: .618em;
@@ -1085,11 +1085,5 @@ button.menu-toggle {
 	.col-full {
 		margin-left: 0;
 		margin-right: 0;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	body {
-		font-size: .95em;
 	}
 }

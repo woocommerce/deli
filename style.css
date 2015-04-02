@@ -8,13 +8,13 @@ Template:		storefront
 Version:		1.0.0
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
-Tags:			light, green, brown, two-columns, right-sidebar, left-sidebar, responsive-layout
+Tags:			light, green, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
 Text Domain:	artisan
 */
 /* =Artisan styles starts here
 -------------------------------------------------------------- */
 body {
-  background-color: #545045;
+  background-color: #645846;
   font-size: .857em;
   -webkit-font-smoothing: subpixel-antialiased; }
   body:before, body:after {
@@ -256,8 +256,7 @@ button.menu-toggle {
   background: #f9f9f9;
   position: relative;
   margin-bottom: 3.631em !important;
-  padding: 1em;
-  box-shadow: 0 0.327em 0 rgba(0, 0, 0, 0.075); }
+  padding: 1em; }
   .content-area:after, .content-area:before {
     content: "";
     display: block;
@@ -295,6 +294,8 @@ button.menu-toggle {
 .header-widget-region .widget_product_search input[type=search],
 .header-widget-region .widget_product_search input[type=text] {
   background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(255, 255, 255, 0.2); }
 
 .site-footer {
@@ -324,6 +325,10 @@ button.menu-toggle {
 .site-main ul.products li.product h3 {
   font-size: 1.2em; }
 
+.storefront-sorting {
+  border-style: dotted;
+  border-width: 2px 0; }
+
 .woocommerce-breadcrumb {
   margin-top: 0; }
 
@@ -332,7 +337,7 @@ button.menu-toggle {
 
 .single-product div.product .summary .price {
   font-weight: 400;
-  background-color: #69adb5;
+  background-color: #0e7784;
   color: #fff;
   display: inline-block;
   padding: .53em 2.244em .53em 1em;
@@ -354,7 +359,7 @@ button.menu-toggle {
 .widget-area .widget {
   padding: 2.618em 1em 1em 1em;
   position: relative;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.85);
   font-family: "Kalam"; }
   .widget-area .widget:after {
     content: "";
@@ -364,7 +369,7 @@ button.menu-toggle {
     left: 0;
     width: 100%;
     height: 7px;
-    background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.7) 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.7) 33.33%, transparent 33.33%) 0 0%;
+    background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.85) 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.85) 33.33%, transparent 33.33%) 0 0%;
     background-size: 0px 100%, 9px 9px, 9px 9px;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -610,9 +615,6 @@ button.menu-toggle {
     overflow: visible; }
     .site-main ul.products li.product h3 {
       font-weight: 700; }
-    .site-main ul.products li.product img {
-      background: #fff;
-      padding: .618em; }
     .site-main ul.products li.product .onsale {
       position: absolute;
       top: .618em;
@@ -788,6 +790,3 @@ button.menu-toggle {
   .col-full {
     margin-left: 0;
     margin-right: 0; } }
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: .95em; } }

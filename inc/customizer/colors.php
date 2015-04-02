@@ -19,7 +19,7 @@ function artisan_color_black( $color ) {
  * @return  string color
  */
 function artisan_color_blue( $color ) {
-	$color = '#69adb5';
+	$color = '#0e7784';
 	return $color;
 }
 
@@ -87,7 +87,7 @@ function artisan_color_orange( $color ) {
  * @return  string color
  */
 function artisan_color_leather( $color ) {
-	$color = '#CCB798';
+	$color = '#645846';
 	return $color;
 }
 
@@ -114,7 +114,7 @@ function artisan_color_white( $color ) {
  * @return  string color
  */
 function artisan_color_english_winter( $color ) {
-	$color = '#777777';
+	$color = '#615d59';
 	return $color;
 }
 
