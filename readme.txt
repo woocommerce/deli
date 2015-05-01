@@ -1,11 +1,11 @@
 === Theme Name ===
-Contributors: woothemes, jameskoster
-Tags: light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
-Requires at least: 4.0
-Tested up to: 4.2
-Stable tag: 1.0.3
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Contributors: 		woothemes, jameskoster
+Tags: 				light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
+Requires at least: 	4.0
+Tested up to: 		4.2
+Stable tag: 		1.0.3
+License: 			GPLv2 or later
+License URI: 		http://www.gnu.org/licenses/gpl-2.0.html
 
 Deli is a Storefront child theme featuring a texturised, earthy design, perfect for stores selling natural, organic or hand made goods.
 
