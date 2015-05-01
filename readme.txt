@@ -26,6 +26,3 @@ Deli is the perfect child theme for smaller businesses who are looking to commun
 
 = 2015.04.02 - 1.0.0 =
 * Initial release!
-
-= 1.0 =
-* Added new option
