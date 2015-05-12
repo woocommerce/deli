@@ -47,17 +47,19 @@ function deli_set_theme_mods() {
  * @return void
  */
 function deli_add_extension_customizer_css() {
-	$content_background_color = storefront_sanitize_hex_color( get_theme_mod( 'sd_content_background_color', apply_filters( 'storefront_default_background_color', '#fcfcfc' ) ) );
+	if ( class_exists( 'Storefront_Designer' ) ) {
+		$content_background_color = storefront_sanitize_hex_color( get_theme_mod( 'sd_content_background_color', apply_filters( 'deli_default_content_background_color', '#f9f9f9' ) ) );
 
-	$style = '
-		.content-area {
-			background-color: ' . $content_background_color . ';
-		}
+		$style = '
+			.content-area {
+				background-color: ' . $content_background_color . ';
+			}
 
-		.site-main:before {
-   			background: -webkit-linear-gradient(rgba(#000,0) 0%, transparent 0%), -webkit-linear-gradient(135deg, ' . $content_background_color . ' 33.33%, transparent 33.33%) 0 0%, rgba(#000,0) -webkit-linear-gradient(45deg, ' . $content_background_color . ' 33.33%, rgba(#000,0) 33.33%) 0 0%;
-		}
-		';
+			.site-main:before {
+	   			background: -webkit-linear-gradient(rgba(#000,0) 0%, transparent 0%), -webkit-linear-gradient(135deg, ' . $content_background_color . ' 33.33%, transparent 33.33%) 0 0%, rgba(#000,0) -webkit-linear-gradient(45deg, ' . $content_background_color . ' 33.33%, rgba(#000,0) 33.33%) 0 0%;
+			}
+			';
 
-	wp_add_inline_style( 'deli-style', $style );
+		wp_add_inline_style( 'deli-style', $style );
+	}
 }

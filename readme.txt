@@ -3,7 +3,7 @@ Contributors: 		woothemes, jameskoster
 Tags: 				light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
 Requires at least: 	4.0
 Tested up to: 		4.2
-Stable tag: 		1.0.3
+Stable tag: 		1.0.4
 License: 			GPLv2 or later
 Image License: 		GPLv2 or later
 License URI: 		http://www.gnu.org/licenses/gpl-2.0.html
@@ -18,6 +18,7 @@ Deli is the perfect child theme for smaller businesses who are looking to commun
 
 = 2015.05.12 - 1.0.4 =
 * Tweak - Description update.
+* Tweak - Only output Storefront Designer styles when extension is active.
 
 = 2015.05.01 - 1.0.3 =
 * Tweak - Added readme.txt.
