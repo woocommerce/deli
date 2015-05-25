@@ -16,7 +16,7 @@ Deli is the perfect child theme for smaller businesses who are looking to commun
 
 == Changelog ==
 
-= 2015.xx.xx - 1.0.5 =
+= 2015.05.25 - 1.0.5 =
 * Fix - Sorting borders when using Storefront 1.4.5+.
 * Dev - Remove unused style.css file.
 
