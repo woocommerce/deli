@@ -17,7 +17,8 @@ Deli is the perfect child theme for smaller businesses who are looking to commun
 == Changelog ==
 
 = 2015.11.03 - 1.1.0 =
-* New - Storefront Mega Menus integration
+* New - Storefront Mega Menus integration.
+* Fix - Parallax hero layout when using full width setting on the homepage.
 
 = 2015.10.26 - 1.0.6 =
 * Fix - Navigation background color setting is now available in the 'Header' section of the Customizer.

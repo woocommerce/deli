@@ -605,8 +605,12 @@ button.menu-toggle {
 // Storefront Parallax Hero compatibility
 .sph-hero,
 .sprh-hero {
-	margin-left: -3.8461538462%;
-	margin-right: -3.8461538462%;
+
+	&.full {
+		margin-left: - gutter() !important;
+		margin-right: - gutter() !important;
+	}
+
 	font-size: 1.1em;
 
 	font-weight: 700;

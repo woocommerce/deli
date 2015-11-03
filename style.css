@@ -452,10 +452,12 @@ button.menu-toggle {
 
 .sph-hero,
 .sprh-hero {
-  margin-left: -3.8461538462%;
-  margin-right: -3.8461538462%;
   font-size: 1.1em;
   font-weight: 700; }
+  .sph-hero.full,
+  .sprh-hero.full {
+    margin-left: -4.347826087% !important;
+    margin-right: -4.347826087% !important; }
   .sph-hero .col-full,
   .sprh-hero .col-full {
     background: transparent !important;
