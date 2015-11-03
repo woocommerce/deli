@@ -1,4 +1,4 @@
-=== Theme Name ===
+=== Deli ===
 Contributors: 		woothemes, jameskoster
 Tags: 				light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
 Requires at least: 	4.0
