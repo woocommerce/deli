@@ -10,6 +10,7 @@
  * @return void
  */
 function deli_add_customizer_css() {
+	$header_text_color 				= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_text_color', apply_filters( 'storefront_default_header_text_color', '#9aa0a7' ) ) );
 	$navigation_bg_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#fcfcfc' ) ) );
 	$accent_color				= storefront_sanitize_hex_color( get_theme_mod( 'storefront_accent_color' ) );
 	$footer_link_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_link_color', apply_filters( 'storefront_default_footer_link_color', '#96588a' ) ) );
@@ -46,6 +47,11 @@ function deli_add_customizer_css() {
 
 		.header-widget-region h1, .header-widget-region h2, .header-widget-region h3, .header-widget-region h4, .header-widget-region h5, .header-widget-region h6 {
 			color: ' . $footer_heading_color . ';
+		}
+
+		.main-navigation ul li.smm-active li ul.products li.product h3,
+		.main-navigation ul li.smm-active li ul.products li.product .price {
+			color: ' . $header_text_color . ';
 		}';
 
 	if ( class_exists( 'Storefront_Designer' ) ) {
