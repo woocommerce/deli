@@ -46,11 +46,6 @@ add_filter( 'storefront_default_accent_color', 					'deli_color_blue' );
 add_filter( 'storefront_default_background_color', 				'deli_color_leather' );
 
 /**
- * Mega menus background color
- */
-add_filter( 'smm_default_header_background_color', 				'deli_color_orange' );
-
-/**
  * Custom background
  */
 add_filter( 'storefront_custom_background_args', 				'deli_background' );
