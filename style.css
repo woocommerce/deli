@@ -5,7 +5,7 @@ Description:	Deli is a Storefront child theme featuring a texturised, earthy des
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
-Version:		1.1.0
+Version:		1.1.1
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
@@ -450,21 +450,72 @@ button.menu-toggle {
 .woocommerce-checkout.scc-distraction-free-checkout .site-header {
   margin-bottom: 0; }
 
+#order_review {
+  background-color: #f9f9f9; }
+
 .sph-hero,
 .sprh-hero {
   font-size: 1.1em;
   font-weight: 700; }
   .sph-hero.full,
   .sprh-hero.full {
-    margin-left: -4.347826087% !important;
-    margin-right: -4.347826087% !important; }
+    margin-left: -5.8823529412% !important;
+    margin-right: -5.8823529412% !important; }
   .sph-hero .col-full,
   .sprh-hero .col-full {
     background: transparent !important;
     box-shadow: none; }
 
+.page-template-template-fullwidth-php .sph-hero.full,
+.page-template-template-fullwidth-php .sprh-hero.full,
+.page-template-template-homepage-php .sph-hero.full,
+.page-template-template-homepage-php .sprh-hero.full,
+.storefront-full-width-content .sph-hero.full,
+.storefront-full-width-content .sprh-hero.full {
+  margin-left: -4.347826087% !important;
+  margin-right: -4.347826087% !important; }
+
 .sd-header-sticky .site-header {
   padding-top: 5.236em; }
+
+.sd-scale-larger {
+  font-size: .9em; }
+
+.sd-scale-largest {
+  font-size: 1em; }
+
+.sd-scale-smaller {
+  font-size: .8em; }
+
+.sd-scale-smallest {
+  font-size: .75em; }
+
+.sd-typography-lora .deli-primary-navigation {
+  font-family: "Lora", serif; }
+
+.sd-typography-roboto-slab .deli-primary-navigation {
+  font-family: "Roboto Slab", sans-serif; }
+
+.sd-typography-courier .deli-primary-navigation {
+  font-family: "Courier", sans-serif; }
+
+.swc-product-gallery-stacked.single-product div.product .images, .swc-product-gallery-stacked.storefront-full-width-content.single-product div.product .images {
+  margin: 0; }
+  .swc-product-gallery-stacked.single-product div.product .images > a, .swc-product-gallery-stacked.storefront-full-width-content.single-product div.product .images > a {
+    width: 100%; }
+  .swc-product-gallery-stacked.single-product div.product .images .thumbnails, .swc-product-gallery-stacked.storefront-full-width-content.single-product div.product .images .thumbnails {
+    width: 100%;
+    margin-bottom: 3.631em; }
+    .swc-product-gallery-stacked.single-product div.product .images .thumbnails a.zoom, .swc-product-gallery-stacked.storefront-full-width-content.single-product div.product .images .thumbnails a.zoom {
+      width: 5.8823529412%;
+      float: left;
+      margin-right: 5.8823529412%; }
+      .swc-product-gallery-stacked.single-product div.product .images .thumbnails a.zoom.first, .swc-product-gallery-stacked.storefront-full-width-content.single-product div.product .images .thumbnails a.zoom.first {
+        clear: none; }
+.swc-product-gallery-stacked.storefront-full-width-content.single-product div.product .images .thumbnails a.zoom {
+  width: 13.0434782609%;
+  float: left;
+  margin-right: 4.347826087%; }
 
 @media screen and (min-width: 768px) {
   body:before, body:after,

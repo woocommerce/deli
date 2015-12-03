@@ -5,7 +5,7 @@ Description:	Deli is a Storefront child theme featuring a texturised, earthy des
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
-Version:		1.1.0
+Version:		1.1.1
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
@@ -602,13 +602,17 @@ button.menu-toggle {
 	}
 }
 
+#order_review {
+	background-color: #f9f9f9;
+}
+
 // Storefront Parallax Hero compatibility
 .sph-hero,
 .sprh-hero {
 
 	&.full {
-		margin-left: - gutter() !important;
-		margin-right: - gutter() !important;
+		margin-left: - gutter(9) !important;
+		margin-right: - gutter(9) !important;
 	}
 
 	font-size: 1.1em;
@@ -621,10 +625,97 @@ button.menu-toggle {
 	}
 }
 
+.page-template-template-fullwidth-php,
+.page-template-template-homepage-php,
+.storefront-full-width-content {
+	.sph-hero,
+	.sprh-hero {
+		&.full {
+			margin-left: - gutter() !important;
+			margin-right: - gutter() !important;
+		}
+	}
+}
+
 // Storefront Designer compatibility
 .sd-header-sticky {
 	.site-header {
 		padding-top: 5.236em;
+	}
+}
+
+.sd-scale-larger {
+	font-size: .9em;
+}
+
+.sd-scale-largest {
+	font-size: 1em;
+}
+
+.sd-scale-smaller {
+	font-size: .8em;
+}
+
+.sd-scale-smallest {
+	font-size: .75em;
+}
+
+.sd-typography-lora {
+	.deli-primary-navigation {
+		font-family: "Lora", serif;
+	}
+}
+
+.sd-typography-roboto-slab {
+	.deli-primary-navigation {
+		font-family: "Roboto Slab", sans-serif;
+	}
+}
+
+.sd-typography-courier {
+	.deli-primary-navigation {
+		font-family: "Courier", sans-serif;
+	}
+}
+
+// Storefront WooCommerce Customiser Compatibility
+.swc-product-gallery-stacked {
+	&.single-product,
+	&.storefront-full-width-content.single-product {
+		div.product {
+			.images {
+				margin: 0;
+
+				> a {
+					width: 100%;
+				}
+
+				.thumbnails {
+					width: 100%;
+					margin-bottom: 3.631em;
+
+					a.zoom {
+						@include span(1 of 9);
+
+						&.first {
+							clear: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.storefront-full-width-content.single-product {
+		div.product {
+			.images {
+				.thumbnails {
+					a.zoom {
+						@include span(2 of 12);
+					}
+				}
+			}
+		}
 	}
 }
 

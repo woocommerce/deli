@@ -17,7 +17,12 @@ function deli_customize_storefront_extensions( $wp_customize ) {
 	$wp_customize->remove_control( 'sd_button_background_style' );
 	$wp_customize->remove_control( 'sd_button_rounded' );
 	$wp_customize->remove_control( 'sd_button_size' );
+	$wp_customize->remove_control( 'sd_button_divider_1' );
+	$wp_customize->remove_control( 'sd_button_divider_2' );
 	$wp_customize->remove_control( 'storefront_footer_background_color' );
+	$wp_customize->remove_control( 'sd_header_layout_divider_before' );
+
+
 }
 
 /**

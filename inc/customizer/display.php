@@ -10,7 +10,8 @@
  * @return void
  */
 function deli_add_customizer_css() {
-	$header_text_color 				= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_text_color', apply_filters( 'storefront_default_header_text_color', '#9aa0a7' ) ) );
+	$header_text_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_text_color', apply_filters( 'storefront_default_header_text_color', '#9aa0a7' ) ) );
+	$header_link_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_link_color', apply_filters( 'storefront_default_header_link_color', '#ffffff' ) ) );
 	$navigation_bg_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#fcfcfc' ) ) );
 	$accent_color				= storefront_sanitize_hex_color( get_theme_mod( 'storefront_accent_color' ) );
 	$footer_link_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_link_color', apply_filters( 'storefront_default_footer_link_color', '#96588a' ) ) );
@@ -26,6 +27,13 @@ function deli_add_customizer_css() {
 	$style = '
 		.deli-primary-navigation {
 			background:' . $navigation_bg_color . ';
+		}
+
+		.main-navigation ul li:hover > a,
+		a.cart-contents:hover,
+		.site-header-cart .widget_shopping_cart a:hover,
+		.site-header-cart:hover > li > a {
+			color: ' . storefront_adjust_color_brightness( $header_link_color, -50 ) . ';
 		}
 
 		.single-product div.product .summary .price {
