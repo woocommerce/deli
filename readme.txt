@@ -16,7 +16,7 @@ Deli is the perfect child theme for smaller businesses who are looking to commun
 
 == Changelog ==
 
-= 2015.12.02 - 1.1.1 =
+= 2015.12.04 - 1.1.1 =
 * Tweak - Improved navigation link hover color.
 * Fix - Improved compatibility with various Storefront extensions.
 
