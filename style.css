@@ -5,7 +5,7 @@ Description:	Deli is a Storefront child theme featuring a texturised, earthy des
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
-Version:		1.1.2
+Version:		1.1.3
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
@@ -160,7 +160,11 @@ button.menu-toggle {
   color: rgba(255, 255, 255, 0.7);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 2.618em;
-  position: relative; }
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0; }
   .woocommerce-breadcrumb:before {
     content: "\f015";
     font-family: "FontAwesome";
