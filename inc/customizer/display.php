@@ -10,17 +10,17 @@
  * @return void
  */
 function deli_add_customizer_css() {
-	$header_text_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_text_color', apply_filters( 'storefront_default_header_text_color', '#9aa0a7' ) ) );
-	$header_link_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_link_color', apply_filters( 'storefront_default_header_link_color', '#ffffff' ) ) );
-	$navigation_bg_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#fcfcfc' ) ) );
-	$accent_color				= storefront_sanitize_hex_color( get_theme_mod( 'storefront_accent_color' ) );
-	$footer_link_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_link_color', apply_filters( 'storefront_default_footer_link_color', '#96588a' ) ) );
-	$footer_heading_color 		= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_heading_color', apply_filters( 'storefront_default_footer_heading_color', '#494c50' ) ) );
-	$footer_text_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_footer_text_color', apply_filters( 'storefront_default_footer_text_color', '#61656b' ) ) );
-	$button_background_color 	= storefront_sanitize_hex_color( get_theme_mod( 'storefront_button_background_color', apply_filters( 'storefront_default_button_background_color', '#60646c' ) ) );
-	$button_text_color 			= storefront_sanitize_hex_color( get_theme_mod( 'storefront_button_text_color', apply_filters( 'storefront_default_button_text_color', '#ffffff' ) ) );
+	$header_text_color 			= get_theme_mod( 'storefront_header_text_color', apply_filters( 'storefront_default_header_text_color', '#9aa0a7' ) );
+	$header_link_color 			= get_theme_mod( 'storefront_header_link_color', apply_filters( 'storefront_default_header_link_color', '#ffffff' ) );
+	$navigation_bg_color 		= get_theme_mod( 'storefront_header_background_color', apply_filters( 'storefront_default_header_background_color', '#fcfcfc' ) );
+	$accent_color				= get_theme_mod( 'storefront_accent_color' );
+	$footer_link_color 			= get_theme_mod( 'storefront_footer_link_color', apply_filters( 'storefront_default_footer_link_color', '#96588a' ) );
+	$footer_heading_color 		= get_theme_mod( 'storefront_footer_heading_color', apply_filters( 'storefront_default_footer_heading_color', '#494c50' ) );
+	$footer_text_color 			= get_theme_mod( 'storefront_footer_text_color', apply_filters( 'storefront_default_footer_text_color', '#61656b' ) );
+	$button_background_color 	= get_theme_mod( 'storefront_button_background_color', apply_filters( 'storefront_default_button_background_color', '#60646c' ) );
+	$button_text_color 			= get_theme_mod( 'storefront_button_text_color', apply_filters( 'storefront_default_button_text_color', '#ffffff' ) );
 
-	$header_bg_color 			= storefront_sanitize_hex_color( get_theme_mod( 'deli_header_background_color', '' ) );
+	$header_bg_color 			= get_theme_mod( 'deli_header_background_color', '' );
 
 	$darken_factor		= -15;
 	$lighten_factor		= 15;
