@@ -3,3 +3,6 @@
 
 # Codekit
 config.codekit
+
+# MacOS
+.DS_Store
