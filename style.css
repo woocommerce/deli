@@ -339,7 +339,8 @@ button.menu-toggle {
   padding-bottom: 1em; }
 
 .woocommerce-breadcrumb {
-  margin-top: 0; }
+  margin-top: 0;
+  background-color: transparent !important; }
 
 .site-header-cart {
   margin-bottom: 0; }
