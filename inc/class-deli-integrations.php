@@ -22,10 +22,11 @@ class Deli_Integrations {
 	 * @since 1.0
 	 */
 	public function __construct() {
-		add_action( 'customize_register', array( $this, 'edit_controls' ),						99 );
-		add_action( 'customize_register', array( $this, 'set_extension_default_settings' ),		99 );
-		add_action( 'after_switch_theme', array( $this, 'edit_theme_mods' ) 						);
-		add_action( 'wp_enqueue_scripts', array( $this, 'add_integrations_css' ),				1000 );
+		add_action( 'customize_register',	array( $this, 'edit_controls' ),						99 );
+		add_action( 'customize_register',	array( $this, 'set_extension_default_settings' ),		99 );
+		add_action( 'init',					array( $this, 'default_theme_mod_values' )				);
+		add_action( 'after_switch_theme', 	array( $this, 'edit_theme_mods' ) 						);
+		add_action( 'wp_enqueue_scripts', 	array( $this, 'add_integrations_css' ),					1000 );
 	}
 
 	/**
@@ -51,6 +52,19 @@ class Deli_Integrations {
 			if ( is_object( $setting ) ) {
 				$setting->default = $val;
 			}
+		}
+	}
+
+	/**
+	 * Returns a default theme_mod value if there is none set.
+	 * @uses get_deli_defaults()
+	 * @return void
+	 */
+	public function default_theme_mod_values() {
+		foreach ( Deli_Integrations::get_deli_extension_defaults() as $mod => $val ) {
+			add_filter( 'theme_mod_' . $mod, function( $setting ) use ( $val ) {
+				return $setting ? $setting : $val;
+			});
 		}
 	}
 
