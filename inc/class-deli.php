@@ -55,7 +55,6 @@ class Deli {
 		wp_enqueue_style( 'oswald', '//fonts.googleapis.com/css?family=Oswald', array( 'storefront-child-style' ) );
 	}
 
-
 	/**
 	 * Deli background settings
 	 * @return array $args the modified args.
