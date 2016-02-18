@@ -1,5 +1,5 @@
 === Deli ===
-Contributors: 		woothemes, jameskoster
+Contributors: 		woothemes, jameskoster, tiagonoronha
 Tags: 				light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
 Requires at least: 	4.0
 Tested up to: 		4.3.1
@@ -18,6 +18,7 @@ Deli is the perfect child theme for smaller businesses who are looking to commun
 
 = 2016.02.17 - 2.0.0 =
 * New - Underlying code structure rewritten to use a more efficient class structure.
+* Fix - RTL styling fixes.
 
 = 2016.01.25 - 1.1.3 =
 * Tweak - Some general tweaks in preparation for Storefront 2.0.
