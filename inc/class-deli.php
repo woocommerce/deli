@@ -43,8 +43,6 @@ class Deli {
 	 * @return void
 	 */
 	public function enqueue_child_styles() {
-		global $storefront_version, $deli_version;
-
 		/**
 		 * Styles
 		 */
