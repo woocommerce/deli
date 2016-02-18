@@ -5,7 +5,7 @@ Description:	Deli is a Storefront child theme featuring a texturised, earthy des
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
-Version:		1.1.3
+Version:		2.0.0
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
@@ -188,8 +188,8 @@ button.menu-toggle {
 }
 
 .deli-primary-navigation {
-	clear: both;
-	background: $orange;
+	// clear: both;
+	// background: $orange;
 	@include clearfix;
 	-webkit-font-smoothing: antialiased;
 	margin-bottom: 1.618em;
@@ -244,12 +244,6 @@ button.menu-toggle {
 .home.blog .site-header,
 .home.page:not(.page-template-template-homepage) .site-header {
 	margin-bottom: 0;
-}
-
-.home {
-	.site-header {
-		margin-bottom: 2.618em;
-	}
 }
 
 .header-widget-region {
@@ -457,6 +451,7 @@ button.menu-toggle {
 
 .woocommerce-breadcrumb {
 	margin-top: 0;
+	background-color: transparent !important;
 }
 
 .site-header-cart {
@@ -774,6 +769,8 @@ button.menu-toggle {
 		padding-bottom: 0;
 		box-shadow: 0 .327em 0 rgba(#000,.075);
 		position: relative;
+		clear: both;
+		background: $orange;
 
 		.smm-mega-menu {
 			margin-left: 0;
@@ -793,6 +790,13 @@ button.menu-toggle {
 
 	.site-header {
 		padding-top: 2.618em;
+	}
+
+
+	.home {
+		.site-header {
+			margin-bottom: 2.618em;
+		}
 	}
 
 	.main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a,
@@ -851,6 +855,8 @@ button.menu-toggle {
 
 		.cart-contents {
 			font-weight: 400;
+			padding-left: 1em;
+			padding-right: 1em;
 		}
 
 		.widget_shopping_cart {
