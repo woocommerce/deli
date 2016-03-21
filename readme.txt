@@ -2,7 +2,7 @@
 Contributors: 		woothemes, jameskoster, tiagonoronha
 Tags: 				light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
 Requires at least: 	4.0
-Tested up to: 		4.3.1
+Tested up to: 		4.4.2
 Stable tag: 		2.0.1
 License: 			GPLv2 or later
 Image License: 		GPLv2 or later
