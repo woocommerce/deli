@@ -157,6 +157,10 @@ class Deli_Customizer {
 				color: ' . storefront_adjust_color_brightness( $header_link_color, -50 ) . ';
 			}
 
+			.woocommerce-breadcrumb a:hover {
+				color: ' . $header_text_color . ';
+			}
+
 			.single-product div.product .summary .price {
 				color: ' . $accent_color . ';
 			}
@@ -186,6 +190,10 @@ class Deli_Customizer {
 			@media screen and (min-width: 768px) {
 				.deli-primary-navigation {
 					background:' . $navigation_bg_color . ';
+				}
+
+				.smm-mega-menu {
+					background:' . storefront_adjust_color_brightness( $navigation_bg_color, -5 ) . ';
 				}
 			}';
 

@@ -5,7 +5,7 @@ Description:	Deli is a Storefront child theme featuring a texturised, earthy des
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
-Version:		2.0.0
+Version:		2.0.1
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
@@ -133,14 +133,11 @@ img.avatar {
   padding: 3px;
   background: #fff; }
 
-.cat-links:before {
-  content: "\f07b"; }
-
-.comments-link:before {
-  content: "\f075"; }
-
 button.menu-toggle {
   margin-bottom: 0; }
+
+.storefront-primary-navigation {
+  background-color: transparent; }
 
 .deli-primary-navigation {
   -webkit-font-smoothing: antialiased;
@@ -226,29 +223,26 @@ button.menu-toggle {
   .storefront-product-section ul.products {
     margin-bottom: 0; }
 
-.hentry {
-  border-bottom-width: 2px;
-  border-bottom-style: dotted; }
-  .hentry .entry-header {
-    border: 0;
-    position: relative; }
-    .hentry .entry-header h1 {
-      border-bottom-style: double;
-      border-bottom-width: 4px;
-      border-bottom-color: #ddd;
-      font-size: 2.618em; }
-    .hentry .entry-header:after, .hentry .entry-header:before {
-      content: "";
-      height: 4px;
-      width: 4px;
-      line-height: 1;
-      position: absolute;
-      bottom: 0px;
-      right: 0;
-      background: #ddd; }
-    .hentry .entry-header:after {
-      right: auto;
-      left: 0; }
+.hentry .entry-header {
+  border: 0;
+  position: relative; }
+  .hentry .entry-header h1 {
+    border-bottom-style: double;
+    border-bottom-width: 4px;
+    border-bottom-color: #ddd;
+    font-size: 2.618em; }
+  .hentry .entry-header:after, .hentry .entry-header:before {
+    content: "";
+    height: 4px;
+    width: 4px;
+    line-height: 1;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    background: #ddd; }
+  .hentry .entry-header:after {
+    right: auto;
+    left: 0; }
 
 .content-area {
   background: #f9f9f9;
@@ -361,6 +355,9 @@ button.menu-toggle {
     margin-top: -3px;
     background-color: #fff;
     border-radius: 100%; }
+
+table.cart td.actions {
+  border: 0; }
 
 .widget-area .widget {
   padding: 2.618em 1em 1em 1em;
