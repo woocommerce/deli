@@ -279,7 +279,9 @@ button.menu-toggle {
     transform: rotate(180deg); }
 
 .site-header {
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 1.618em;
+  padding-bottom: 0; }
 
 .site-search .widget_product_search input[type=search],
 .site-search .widget_product_search input[type=text],
@@ -564,6 +566,7 @@ table.cart td.actions {
   .site-logo-link {
     margin-bottom: 1.618em; }
   .site-header {
+    padding: 0;
     padding-top: 2.618em; }
   .home .site-header {
     margin-bottom: 2.618em; }

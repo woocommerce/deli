@@ -367,6 +367,8 @@ button.menu-toggle {
 
 .site-header {
 	text-shadow: 0 1px 1px rgba(#000,.2);
+	padding: 1.618em;
+	padding-bottom: 0;
 }
 
 .site-search .widget_product_search input[type=search],
@@ -789,6 +791,7 @@ table.cart {
 	}
 
 	.site-header {
+		padding: 0;
 		padding-top: 2.618em;
 	}
 
