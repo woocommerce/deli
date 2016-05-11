@@ -16,6 +16,10 @@ Deli is the perfect child theme for smaller businesses who are looking to commun
 
 == Changelog ==
 
+= 2016.05.11 - 2.0.2 =
+ * Tweak - Adopt Storefront 2.0's methods for applying default settings.
+ * Fix - Support for WordPress 4.5's custom logo feature.
+
 = 2016.03.21 - 2.0.1 =
  * Tweak - Storefront 2.0.0 compatibility.
 
