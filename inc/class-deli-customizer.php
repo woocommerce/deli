@@ -23,8 +23,8 @@ class Deli_Customizer {
 	public function __construct() {
 		global $storefront_version;
 
-		add_action( 'wp_enqueue_scripts',	array( $this, 'add_customizer_css' ),						1000 );
-		add_action( 'customize_register',	array( $this, 'edit_default_controls' ),					99 );
+		add_action( 'wp_enqueue_scripts',	             array( $this, 'add_customizer_css' ),						1000 );
+		add_action( 'customize_register',	             array( $this, 'edit_default_controls' ),					99 );
 		add_filter( 'storefront_setting_default_values', array( $this, 'get_deli_defaults' ) );
 
 		/**
@@ -57,7 +57,7 @@ class Deli_Customizer {
 			'storefront_text_color'						=> '#615d59',
 			'storefront_footer_text_color'				=> '#ffffff',
 			'storefront_accent_color'					=> '#0e7784',
-			'storefront_background_color'				=> '#645846',
+			'background_color'				            => '#645846',
 		) );
 	}
 
