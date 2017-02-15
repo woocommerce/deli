@@ -2,10 +2,10 @@
 Theme Name:		Deli
 Theme URI:		https://woocommerce.com/products/deli/
 Description:	Deli is a Storefront child theme featuring a texturised, earthy design, perfect for stores selling natural, organic or hand made goods. As a Storefront child theme, Deli benefits from all of the tasty WooCommerce integration features that Storefront provides. Bon Appetit!
-Author:			WooThemes
+Author:			WooCommerce
 Author URI:		https://woocommerce.com
 Template:		storefront
-Version:		2.0.4
+Version:		2.0.5
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			e-commerce, light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
@@ -161,20 +161,29 @@ button.menu-toggle {
   margin-right: 0;
   padding-left: 0;
   padding-right: 0; }
-  .woocommerce-breadcrumb:before {
-    content: "\f015";
-    font-family: "FontAwesome";
-    margin-right: .618em;
-    font-weight: 400; }
   .woocommerce-breadcrumb a {
     font-weight: 400;
     color: rgba(255, 255, 255, 0.9); }
     .woocommerce-breadcrumb a:hover {
       text-decoration: underline; }
 
+table th,
+#payment .payment_methods > li {
+  background-color: #fff !important; }
+
+table tbody td,
+fieldset,
+fieldset legend {
+  background-color: #fafafa !important; }
+
+table tbody tr:nth-child(2n) td,
+#payment .payment_methods > li .payment_box, #payment .place-order {
+  background-color: #f6f6f6 !important; }
+
 .woocommerce-tabs {
   border-style: dotted;
-  border-width: 2px 0; }
+  border-width: 2px 0;
+  border-color: rgba(0, 0, 0, 0.1); }
 
 .col-full,
 .header-widget-region {
@@ -281,7 +290,8 @@ button.menu-toggle {
 .site-header {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   padding: 1.618em;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  border-bottom: 0; }
 
 .site-search .widget_product_search input[type=search],
 .site-search .widget_product_search input[type=text],
@@ -443,6 +453,9 @@ table.cart td.actions {
 
 .page-template-template-homepage .site-main {
   padding-top: 0; }
+  .page-template-template-homepage .site-main > .type-page:first-child {
+    margin-left: 0 !important;
+    width: auto !important; }
 
 .woocommerce-checkout.scc-distraction-free-checkout .deli-primary-navigation {
   display: none; }
@@ -518,6 +531,9 @@ table.cart td.actions {
   float: left;
   margin-right: 4.347826087%; }
 
+.woocommerce-pagination .page-numbers li .page-numbers.current {
+  background: #fff; }
+
 @media screen and (min-width: 768px) {
   body:before, body:after,
   html:before,
@@ -559,16 +575,16 @@ table.cart td.actions {
       margin-right: 0;
       padding: 4.347826087%;
       box-shadow: inset 0 0.327em 0 0 rgba(0, 0, 0, 0.015); }
-  .site-branding,
-  .site-search,
-  .site-header-cart,
-  .site-logo-anchor,
-  .site-logo-link,
-  .custom-logo-link {
-    margin-bottom: 1.618em; }
   .site-header {
     padding: 0;
     padding-top: 2.618em; }
+    .site-header .site-branding,
+    .site-header .site-search,
+    .site-header .site-header-cart,
+    .site-header .site-logo-anchor,
+    .site-header .site-logo-link,
+    .site-header .custom-logo-link {
+      margin-bottom: 1.618em; }
   .home .site-header {
     margin-bottom: 2.618em; }
   .main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a,
@@ -735,7 +751,7 @@ table.cart td.actions {
       width: 52.9411764706%;
       float: left;
       margin-right: 5.8823529412%; }
-      .single-product div.product .images > a {
+      .single-product div.product .images > a:not(.woocommerce-product-gallery__trigger) {
         display: block;
         width: 77.7777777778%;
         float: left;
