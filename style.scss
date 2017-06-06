@@ -5,7 +5,7 @@ Description:	Deli is a Storefront child theme featuring a texturised, earthy des
 Author:			WooCommerce
 Author URI:		https://woocommerce.com
 Template:		storefront
-Version:		2.0.6
+Version:		2.0.7
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			e-commerce, light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
@@ -597,9 +597,12 @@ table.cart {
 
 // Homepage template
 .page-template-template-homepage {
+	&:not(.has-post-thumbnail) .site-main,
 	.site-main {
 		padding-top: 0;
+	}
 
+	.site-main {
 		> .type-page:first-child {
 			margin-left: 0 !important;
 			width: auto !important;
