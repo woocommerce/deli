@@ -596,6 +596,10 @@ table.cart {
 }
 
 // Homepage template
+body:not(.page-template-template-homepage) .site-main {
+	padding: 2.618em;
+}
+
 .page-template-template-homepage {
 	&:not(.has-post-thumbnail) .site-main,
 	.site-main {

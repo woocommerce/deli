@@ -451,6 +451,9 @@ table.cart td.actions {
 .widget_recent_entries ul li:before, .widget_pages ul li:before {
   content: "\f15c" !important; }
 
+body:not(.page-template-template-homepage) .site-main {
+  padding: 2.618em; }
+
 .page-template-template-homepage:not(.has-post-thumbnail) .site-main,
 .page-template-template-homepage .site-main {
   padding-top: 0; }
