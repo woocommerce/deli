@@ -43,21 +43,21 @@ class Deli_Customizer {
 	 */
 	public function get_deli_defaults() {
 		return apply_filters( 'deli_default_settings', $args = array(
-			'storefront_heading_color'					=> '#2b2b2b',
-			'storefront_footer_heading_color'			=> '#ffffff',
-			'storefront_header_background_color'		=> '#b64902',
-			'storefront_footer_background_color'		=> '#2b2b2b',
-			'storefront_header_link_color'				=> '#ffffff',
-			'storefront_header_text_color'				=> '#ffffff',
-			'storefront_button_background_color'		=> '#0e7784',
-			'storefront_button_text_color'				=> '#ffffff',
-			'storefront_button_alt_background_color'	=> '#b64902',
-			'storefront_button_alt_text_color'			=> '#ffffff',
-			'storefront_footer_link_color'				=> '#e4decd',
-			'storefront_text_color'						=> '#615d59',
-			'storefront_footer_text_color'				=> '#ffffff',
-			'storefront_accent_color'					=> '#0e7784',
-			'background_color'				            => '#645846',
+			'storefront_heading_color'               => '#2b2b2b',
+			'storefront_footer_heading_color'        => '#ffffff',
+			'storefront_header_background_color'     => '#b64902',
+			'storefront_footer_background_color'     => '#2b2b2b',
+			'storefront_header_link_color'           => '#ffffff',
+			'storefront_header_text_color'           => '#ffffff',
+			'storefront_button_background_color'     => '#0e7784',
+			'storefront_button_text_color'           => '#ffffff',
+			'storefront_button_alt_background_color' => '#b64902',
+			'storefront_button_alt_text_color'       => '#ffffff',
+			'storefront_footer_link_color'           => '#e4decd',
+			'storefront_text_color'                  => '#615d59',
+			'storefront_footer_text_color'           => '#ffffff',
+			'storefront_accent_color'                => '#0e7784',
+			'background_color'                       => '645846',
 		) );
 	}
 
