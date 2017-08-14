@@ -1,5 +1,8 @@
 *** Deli Changelog ***
 
+2017.08.14 - version 2.0.9
+ * Fix - Background color in order details table.
+
 2017.07.03 - version 2.0.8
  * Fix - Invalid default body color.
 
