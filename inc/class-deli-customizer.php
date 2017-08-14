@@ -191,6 +191,19 @@ class Deli_Customizer {
 				color: ' . $header_text_color . ';
 			}
 
+			.order_details {
+				background-color: #ffffff;
+			}
+
+			.order_details > li {
+				border-bottom: 1px dotted #ffffff;
+			}
+
+			.order_details:before,
+			.order_details:after {
+				background: -webkit-linear-gradient(transparent 0,transparent 0),-webkit-linear-gradient(135deg,#ffffff 33.33%,transparent 33.33%),-webkit-linear-gradient(45deg,#ffffff 33.33%,transparent 33.33%)
+			}
+
 			@media screen and (min-width: 768px) {
 				.deli-primary-navigation {
 					background:' . $navigation_bg_color . ';
