@@ -109,7 +109,7 @@ class Deli_Integrations {
 	public function add_integrations_css() {
 		$style = '';
 
-		if ( class_exists( 'Storefront_Designer' ) ) {
+		if ( class_exists( 'Storefront_Powerpack' ) ) {
 			$content_background_color = storefront_sanitize_hex_color( get_theme_mod( 'sd_content_background_color', apply_filters( 'deli_default_content_background_color', '#f9f9f9' ) ) );
 
 			$style .= '
