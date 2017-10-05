@@ -116,7 +116,7 @@ class Deli_Customizer {
 		$wp_customize->get_setting( 'storefront_header_background_color' )->transport 	= 'refresh';
 		$wp_customize->get_control( 'storefront_header_background_color' )->label 		= __( 'Navigation background color', 'deli' );
 
-		if ( class_exists( 'Storefront_Designer' ) ) {
+		if ( class_exists( 'Storefront_Powerpack' ) ) {
 			/**
 			 * Header Background
 			 */
@@ -214,8 +214,8 @@ class Deli_Customizer {
 				}
 			}';
 
-		if ( class_exists( 'Storefront_Designer' ) ) {
-			$sticky 				= get_theme_mod( 'sd_header_sticky', 'default' );
+		if ( class_exists( 'Storefront_Powerpack' ) ) {
+			$sticky 				= get_theme_mod( 'sp_header_sticky', 'default' );
 
 			if ( 'sticky-header' == $sticky ) {
 				$style .= '
