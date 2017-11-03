@@ -116,13 +116,13 @@ class Deli_Customizer {
 		$wp_customize->get_setting( 'storefront_header_background_color' )->transport 	= 'refresh';
 		$wp_customize->get_control( 'storefront_header_background_color' )->label 		= __( 'Navigation background color', 'deli' );
 
-		if ( class_exists( 'Storefront_Designer' ) ) {
+		if ( class_exists( 'Storefront_Designer' ) || class_exists( 'Storefront_Powerpack' ) ) {
 			/**
 			 * Header Background
 			 */
 			$wp_customize->add_setting( 'deli_header_background_color', array(
 				'default'           => '',
-				'sanitize_callback' => 'storefront_sanitize_hex_color',
+				'sanitize_callback' => 'sanitize_hex_color',
 			) );
 
 			$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'deli_header_background_color', array(
@@ -214,8 +214,13 @@ class Deli_Customizer {
 				}
 			}';
 
-		if ( class_exists( 'Storefront_Designer' ) ) {
-			$sticky 				= get_theme_mod( 'sd_header_sticky', 'default' );
+		if ( class_exists( 'Storefront_Designer' ) || class_exists( 'Storefront_Powerpack' ) ) {
+
+			if ( class_exists( 'Storefront_Designer' ) ) {
+				$sticky = get_theme_mod( 'sd_header_sticky', 'default' );
+			} else {
+				$sticky = get_theme_mod( 'sp_header_sticky', 'default' );
+			}
 
 			if ( 'sticky-header' == $sticky ) {
 				$style .= '

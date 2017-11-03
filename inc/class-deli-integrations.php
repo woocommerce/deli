@@ -109,8 +109,13 @@ class Deli_Integrations {
 	public function add_integrations_css() {
 		$style = '';
 
-		if ( class_exists( 'Storefront_Designer' ) ) {
-			$content_background_color = storefront_sanitize_hex_color( get_theme_mod( 'sd_content_background_color', apply_filters( 'deli_default_content_background_color', '#f9f9f9' ) ) );
+		if ( class_exists( 'Storefront_Designer' ) || class_exists( 'Storefront_Powerpack' ) ) {
+
+			if ( class_exists( 'Storefront_Designer' ) ) {
+				$content_background_color = sanitize_hex_color( get_theme_mod( 'sd_content_background_color', apply_filters( 'deli_default_content_background_color', '#f9f9f9' ) ) );
+			} else {
+				$content_background_color = sanitize_hex_color( get_theme_mod( 'sp_content_background_color', apply_filters( 'deli_default_content_background_color', '#f9f9f9' ) ) );
+			}
 
 			$style .= '
 				.content-area {
