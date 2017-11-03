@@ -1,5 +1,9 @@
 *** Deli Changelog ***
 
+2017.11.13 - version 2.0.10
+ * Fix - Remove extra margin when WooCommerce is not activated.
+ * Fix - Compatibility with Storefront Powerpack sticky header.
+
 2017.08.14 - version 2.0.9
  * Fix - Background color in order details table.
 
