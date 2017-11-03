@@ -167,6 +167,9 @@ button.menu-toggle {
     .woocommerce-breadcrumb a:hover {
       text-decoration: underline; }
 
+.no-wc-breadcrumb .site-header {
+  margin-bottom: auto; }
+
 table th,
 #payment .payment_methods > li {
   background-color: #fff !important; }
