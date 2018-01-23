@@ -1,5 +1,8 @@
 *** Deli Changelog ***
 
+2018.01.23 - version 2.0.11
+ * Fix - Filter default background color.
+
 2017.11.13 - version 2.0.10
  * Fix - Remove extra margin when WooCommerce is not activated.
  * Fix - Compatibility with Storefront Powerpack sticky header.
