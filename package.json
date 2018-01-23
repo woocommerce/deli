@@ -1,7 +1,7 @@
 {
   "name": "deli",
   "description": "Deli child theme for Storefront",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "private": "true",
   "repository": {
     "type": "git",
