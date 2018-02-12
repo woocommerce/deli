@@ -27,7 +27,7 @@ class Deli {
 
 		if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '3.3', '<' ) ) {
 			add_filter( 'storefront_loop_columns', array( $this, 'loop_columns' ) );
-			add_filter( 'storefront_products_per_page',	array( $this, 'products_per_page' ) );
+			add_filter( 'storefront_products_per_page', array( $this, 'products_per_page' ) );
 		}
 	}
 
