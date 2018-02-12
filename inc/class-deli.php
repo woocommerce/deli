@@ -22,10 +22,13 @@ class Deli {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_child_styles' ), 99 );
 		add_filter( 'storefront_custom_background_args', array( $this, 'background' ) );
-		add_action( 'storefront_loop_columns', array( $this, 'loop_columns' ) );
 		add_action( 'swc_product_columns_default', array( $this, 'loop_columns' ) );
 		add_filter( 'storefront_related_products_args',	array( $this, 'related_products_args' ) );
-		add_filter( 'storefront_products_per_page',	array( $this, 'products_per_page' ) );
+
+		if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '3.3', '<' ) ) {
+			add_filter( 'storefront_loop_columns', array( $this, 'loop_columns' ) );
+			add_filter( 'storefront_products_per_page',	array( $this, 'products_per_page' ) );
+		}
 	}
 
 	/**
