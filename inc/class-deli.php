@@ -40,6 +40,7 @@ class Deli {
 		$args['single_image_width']              = 530;
 		$args['thumbnail_image_width']           = 241;
 		$args['product_grid']['default_columns'] = 4;
+		$args['product_grid']['default_rows']    = 3;
 
 		return $args;
 	}
