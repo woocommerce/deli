@@ -37,8 +37,8 @@ class Deli {
 	 * @return array the modified arguments
 	 */
 	public function woocommerce_support( $args ) {
-		$args['single_image_width']              = 586;
-		$args['thumbnail_image_width']           = 228;
+		$args['single_image_width']              = 530;
+		$args['thumbnail_image_width']           = 241;
 		$args['product_grid']['default_columns'] = 4;
 
 		return $args;
