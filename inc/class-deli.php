@@ -19,6 +19,7 @@ class Deli {
 	 * @since 1.0
 	 */
 	public function __construct() {
+		add_filter( 'storefront_woocommerce_args', array( $this, 'woocommerce_support' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_child_styles' ), 99 );
 		add_filter( 'storefront_custom_background_args', array( $this, 'background' ) );
@@ -29,6 +30,19 @@ class Deli {
 			add_filter( 'storefront_loop_columns', array( $this, 'loop_columns' ) );
 			add_filter( 'storefront_products_per_page', array( $this, 'products_per_page' ) );
 		}
+	}
+
+	/**
+	 * Override Storefront default theme settings for WooCommerce.
+	 * @return array the modified arguments
+	 */
+	public function woocommerce_support( $args ) {
+		$args['single_image_width']              = 530;
+		$args['thumbnail_image_width']           = 241;
+		$args['product_grid']['default_columns'] = 4;
+		$args['product_grid']['default_rows']    = 3;
+
+		return $args;
 	}
 
 	/**
