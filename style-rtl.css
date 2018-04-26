@@ -95,8 +95,7 @@ h3 {
 .site-footer {
   background-color: transparent !important; }
 
-a,
-.site-branding h1 a {
+a {
   font-weight: 400; }
 
 button,
@@ -132,6 +131,13 @@ textarea.input-text {
 img.avatar {
   padding: 3px;
   background: #fff; }
+
+.site-branding .site-title {
+  letter-spacing: 0;
+  font-weight: 700;
+  font-family: "Copse", sans-serif; }
+  .site-branding .site-title a {
+    font-weight: 400; }
 
 button.menu-toggle {
   margin-bottom: 0; }

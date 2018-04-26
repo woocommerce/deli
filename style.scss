@@ -18,7 +18,7 @@ Text Domain:	deli
 
 @import 'bourbon';
 @import 'susy';
-@import '../storefront/assets/sass/utils/variables';
+@import '../storefront/assets/css/sass/utils/variables';
 
 $orange: 	#b64902;
 $blue: 		#0e7784;
@@ -129,8 +129,7 @@ h3 {
 	background-color: transparent !important;
 }
 
-a,
-.site-branding h1 a {
+a {
 	font-weight: 400;
 }
 
@@ -171,6 +170,18 @@ img {
 	&.avatar {
 		padding: 3px;
 		background: #fff;
+	}
+}
+
+.site-branding {
+	.site-title {
+		letter-spacing: 0;
+		font-weight: 700;
+		font-family: $serif;
+
+		a {
+			font-weight: 400;
+		}
 	}
 }
 
