@@ -18,7 +18,8 @@ Text Domain:	deli
 
 @import 'bourbon';
 @import 'susy';
-@import '../storefront/assets/sass/utils/variables';
+@import '../storefront/assets/css/sass/utils/variables';
+@import '../storefront/assets/css/sass/vendors/font-awesome/variables';
 
 $orange: 	#b64902;
 $blue: 		#0e7784;
@@ -1241,5 +1242,53 @@ body:not(.page-template-template-homepage) .site-main {
 	.col-full {
 		margin-left: 0;
 		margin-right: 0;
+	}
+}
+
+/**
+ * Storefront 2.3
+ */
+.storefront-2-3 {
+	.widget_product_categories ul li:before,
+	.widget_categories ul li:before {
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
+		content: fa-content( $fa-var-folder ) !important;
+	}
+
+	.widget_product_categories,
+	.widget_categories {
+		ul {
+			li.current-cat {
+				&:before {
+					font-family: 'Font Awesome 5 Free';
+					font-weight: 900;
+					content: fa-content( $fa-var-folder ) !important;
+				}
+			}
+		}
+	}
+
+	.widget_recent_comments ul li:before {
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
+		content: fa-content( $fa-var-comment ) !important;
+	}
+
+	.widget_archive ul li:before {
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
+		content: fa-content( $fa-var-folder ) !important;
+	}
+
+	.widget_recent_entries ul li:before, .widget_pages ul li:before {
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
+		content: fa-content( $fa-var-file-alt ) !important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.storefront-2-3 {
 	}
 }
