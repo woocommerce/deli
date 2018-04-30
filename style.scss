@@ -130,8 +130,7 @@ h3 {
 	background-color: transparent !important;
 }
 
-a,
-.site-branding h1 a {
+a {
 	font-weight: 400;
 }
 
@@ -172,6 +171,18 @@ img {
 	&.avatar {
 		padding: 3px;
 		background: #fff;
+	}
+}
+
+.site-branding {
+	.site-title {
+		letter-spacing: 0;
+		font-weight: 700;
+		font-family: $serif;
+
+		a {
+			font-weight: 400;
+		}
 	}
 }
 
