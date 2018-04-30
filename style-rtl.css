@@ -858,3 +858,33 @@ body:not(.page-template-template-homepage) .site-main {
   .col-full {
     margin-right: 0;
     margin-left: 0; } }
+
+/**
+ * Storefront 2.3
+ */
+.storefront-2-3 .widget_product_categories ul li:before,
+.storefront-2-3 .widget_categories ul li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f07b" !important; }
+
+.storefront-2-3 .widget_product_categories ul li.current-cat:before,
+.storefront-2-3 .widget_categories ul li.current-cat:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f07b" !important; }
+
+.storefront-2-3 .widget_recent_comments ul li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f075" !important; }
+
+.storefront-2-3 .widget_archive ul li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f07b" !important; }
+
+.storefront-2-3 .widget_recent_entries ul li:before, .storefront-2-3 .widget_pages ul li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f15c" !important; }

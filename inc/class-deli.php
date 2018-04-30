@@ -25,11 +25,28 @@ class Deli {
 		add_filter( 'storefront_custom_background_args', array( $this, 'background' ) );
 		add_action( 'swc_product_columns_default', array( $this, 'loop_columns' ) );
 		add_filter( 'storefront_related_products_args',	array( $this, 'related_products_args' ) );
+		add_filter( 'body_class', array( $this, 'body_classes' ) );
 
 		if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '3.3', '<' ) ) {
 			add_filter( 'storefront_loop_columns', array( $this, 'loop_columns' ) );
 			add_filter( 'storefront_products_per_page', array( $this, 'products_per_page' ) );
 		}
+	}
+
+	/**
+	 * Adds custom classes to the array of body classes.
+	 *
+	 * @param array $classes Classes for the body element.
+	 * @return array
+	 */
+	public function body_classes( $classes ) {
+		global $storefront_version;
+
+		if ( version_compare( $storefront_version, '2.3.0', '>=' ) ) {
+			$classes[] = 'storefront-2-3';
+		}
+
+		return $classes;
 	}
 
 	/**
