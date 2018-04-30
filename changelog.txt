@@ -1,5 +1,9 @@
 *** Deli Changelog ***
 
+2018.04.30 - version 2.0.13
+ * Tweak - Storefront 2.3.0 compatibility.
+ * Fix - Consistent site title styling across all pages.
+
 2018.02.15 - version 2.0.12
  * Tweak - Compatibility with WooCommerce 3.3.
 
