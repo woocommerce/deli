@@ -288,7 +288,7 @@ table tbody tr:nth-child(2n) td,
     right: 0;
     width: 100%;
     height: 9px;
-    background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(135deg, #f9f9f9 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(45deg, #f9f9f9 33.33%, transparent 33.33%) 100% 0%;
+    background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-135deg, #f9f9f9 33.33%, transparent 33.33%) 100% 0%, transparent -webkit-linear-gradient(-45deg, #f9f9f9 33.33%, transparent 33.33%) 100% 0%;
     background-size: 0px 100%, 9px 9px, 9px 9px;
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -327,6 +327,9 @@ table tbody tr:nth-child(2n) td,
 .page-template-template-homepage .site-main .sph-hero:first-child,
 .page-template-template-homepage .site-main .sprh-hero:first-child {
   margin-top: 0; }
+
+#comments .comment-list .comment-content .comment-text {
+  background-color: rgba(0, 0, 0, 0.0125); }
 
 .comment-text .description {
   padding: 1em;
@@ -393,7 +396,7 @@ table.cart td.actions {
     right: 0;
     width: 100%;
     height: 7px;
-    background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.85) 33.33%, transparent 33.33%) 0 0%, transparent -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.85) 33.33%, transparent 33.33%) 100% 0%;
+    background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-135deg, rgba(255, 255, 255, 0.85) 33.33%, transparent 33.33%) 100% 0%, transparent -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.85) 33.33%, transparent 33.33%) 100% 0%;
     background-size: 0px 100%, 9px 9px, 9px 9px;
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);

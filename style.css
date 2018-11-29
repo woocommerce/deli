@@ -328,6 +328,9 @@ table tbody tr:nth-child(2n) td,
 .page-template-template-homepage .site-main .sprh-hero:first-child {
   margin-top: 0; }
 
+#comments .comment-list .comment-content .comment-text {
+  background-color: rgba(0, 0, 0, 0.0125); }
+
 .comment-text .description {
   padding: 1em;
   background: #f5f2e8;
