@@ -1,5 +1,9 @@
 *** Deli Changelog ***
 
+2018.12.06 - version 2.0.14
+ * Tweak - Storefront 2.4.0 compatibility.
+ * Fix - Update comments background color.
+
 2018.04.30 - version 2.0.13
  * Tweak - Storefront 2.3.0 compatibility.
  * Fix - Consistent site title styling across all pages.
