@@ -10,3 +10,10 @@ config.codekit
 # Grunt
 /node_modules/
 npm-debug.log
+/deli/
+*.zip
+
+# Translate
+/languages/*.pot
+/languages/*.po
+/languages/*.mo
