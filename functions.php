@@ -10,7 +10,6 @@
  */
 $theme				= wp_get_theme( 'deli' );
 $deli_version		= $theme['Version'];
-
 $theme				= wp_get_theme( 'storefront' );
 $storefront_version	= $theme['Version'];
 
