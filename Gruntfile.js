@@ -12,7 +12,8 @@ module.exports = function( grunt ) {
 					includePaths: ['node_modules/susy/sass'].concat( require( 'node-bourbon' ).includePaths )
 				},
 				files: [{
-					'style.css': 'style.scss'
+					'style.css': 'style.scss',
+					'style-editor.css': 'style-editor.scss',
 				}]
 			}
 		},
@@ -21,7 +22,8 @@ module.exports = function( grunt ) {
 		watch: {
 			css: {
 				files: [
-					'style.scss'
+					'style.scss',
+					'style-editor.css'
 				],
 				tasks: [
 					'sass'

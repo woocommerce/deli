@@ -23,6 +23,7 @@ class Deli {
 		add_filter( 'storefront_woocommerce_args', array( $this, 'woocommerce_support' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_child_styles' ), 99 );
+		add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_editor_styles' ) );
 		add_filter( 'storefront_custom_background_args', array( $this, 'background' ) );
 		add_action( 'swc_product_columns_default', array( $this, 'loop_columns' ) );
 		add_filter( 'storefront_related_products_args',	array( $this, 'related_products_args' ) );
@@ -100,6 +101,16 @@ class Deli {
 		wp_enqueue_style( 'anonymous-pro', '//fonts.googleapis.com/css?family=Anonymous+Pro:400,400italic,700', array( 'storefront-child-style' ) );
 		wp_enqueue_style( 'kalam', '//fonts.googleapis.com/css?family=Kalam:400,700', array( 'storefront-child-style' ) );
 		wp_enqueue_style( 'oswald', '//fonts.googleapis.com/css?family=Oswald', array( 'storefront-child-style' ) );
+	}
+
+	/**
+	 * Enqueue Editor Styles
+	 * @return void
+	 */
+	public function enqueue_editor_styles() {
+		global $deli_version;
+
+		wp_enqueue_style( 'deli-editor-style', get_stylesheet_directory_uri() . '/style-editor.css', $deli_version );
 	}
 
 	/**

@@ -1,0 +1,31 @@
+body .editor-styles-wrapper {
+  background-color: #fff; }
+
+body .editor-styles-wrapper .editor-post-title__block .editor-post-title__input {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 2.618em; }
+
+body .editor-styles-wrapper .editor-post-title__block {
+  border-bottom-color: #ddd;
+  border-bottom-style: double;
+  border-bottom-width: 4px; }
+
+body .editor-styles-wrapper .editor-post-title__block:after,
+body .editor-styles-wrapper .editor-post-title__block:before {
+  content: "";
+  height: 4px;
+  width: 4px;
+  line-height: 1;
+  position: absolute;
+  bottom: -4px;
+  background: #ddd; }
+
+body .editor-styles-wrapper .editor-post-title__block:after {
+  right: 0;
+  left: initial; }
+
+body .editor-styles-wrapper .editor-post-title__block:before {
+  left: 0; }
+
+body .editor-styles-wrapper p {
+  font-family: "Anonymous Pro", monospace; }
