@@ -626,6 +626,11 @@ body:not(.page-template-template-homepage) .site-main {
 	&:not(.has-post-thumbnail) .site-main,
 	.site-main {
 		padding-top: 0;
+		@media screen and (max-width: 609px) {
+			> .sph-hero:first-child {
+				margin-top: 0;
+			}
+		}
 	}
 
 	.site-main {
