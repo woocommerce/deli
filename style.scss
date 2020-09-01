@@ -626,7 +626,7 @@ body:not(.page-template-template-homepage) .site-main {
 	&:not(.has-post-thumbnail) .site-main,
 	.site-main {
 		padding-top: 0;
-		@media screen and (max-width: 609px) {
+		@media screen and (max-width: 767px) {
 			> .sph-hero:first-child {
 				margin-top: 0;
 			}
