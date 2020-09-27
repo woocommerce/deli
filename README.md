@@ -12,6 +12,8 @@ As **Deli** is a child theme of the Storefront theme, both [Storefront](https://
 - Demo: https://themes.woocommerce.com/deli/
 - Docs: https://docs.woocommerce.com/document/deli-storefront-child-theme/
 
+## NPM scripts
+
 **Deli** utilizes the following npm scripts for task management utilities:
 
 - `npm run build`: Creates `style.css` and `style-rtl.css` based on `style.scss`
