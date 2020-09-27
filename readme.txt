@@ -1,5 +1,5 @@
 === Deli ===
-Contributors:      automattic, jameskoster, tiagonoronha
+Contributors:      woocommerce, automattic, jameskoster, tiagonoronha
 Tags:              e-commerce, light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
 Requires at least: 4.0
 Tested up to:      5.2
