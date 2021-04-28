@@ -36,6 +36,8 @@ class Deli_Customizer {
 		if ( version_compare( $storefront_version, '2.0.0', '<' ) ) {
 			add_action( 'init',				array( $this, 'default_theme_settings' ) );
 		}
+
+		add_filter( 'storefront_gutenberg_customizer_css', array( $this, 'remove_wc_product_block_rules' ), 10, 1);
 	}
 
 	/**
@@ -243,6 +245,14 @@ class Deli_Customizer {
 	 */
 	public function default_background_color( $color ) {
 		return '645846';
+	}
+
+    public function remove_wc_product_block_rules($styles)
+    {
+        $pattern = '/\\.wc-block-components-order-summary-item__quantity\\s\\{(.|\\s)*\\}/m';
+        $replacement = '';
+        $result = preg_replace($pattern, $replacement, $styles);
+        return $result !== null ? $result : $styles;
 	}
 }
 
