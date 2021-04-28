@@ -523,6 +523,15 @@ table.cart {
 	}
 }
 
+
+// Woo Blocks
+.wp-block-woocommerce-checkout .wc-block-components-order-summary-item__quantity {
+	box-shadow: 0 0 0 2px #fff;
+	color: #000;
+	background: #fff;
+	border: 2px solid;
+}
+
 // Widgets
 .widget-area {
 	.widget {
