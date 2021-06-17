@@ -28,7 +28,6 @@ class Deli {
 		add_action( 'swc_product_columns_default', array( $this, 'loop_columns' ) );
 		add_filter( 'storefront_related_products_args',	array( $this, 'related_products_args' ) );
 		add_filter( 'body_class', array( $this, 'body_classes' ) );
-		add_filter( 'storefront_gutenberg_customizer_css', array( $this, 'override_storefront_gutenberg_customizer_css' ) );
 
 		if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '3.3', '<' ) ) {
 			add_filter( 'storefront_loop_columns', array( $this, 'loop_columns' ) );
@@ -152,22 +151,6 @@ class Deli {
 	public function products_per_page( $per_page ) {
 		$per_page = 12;
 		return intval( $per_page );
-	}
-
-	/**
-	 * Adjust styles provided by customizer
-	 * @param $styles
-	 */
-	public function override_storefront_gutenberg_customizer_css( $styles )
-	{
-		$color = get_theme_mod('storefront_button_text_color' );
-		$styles .= "
-			.wc-block-components-order-summary-item__quantity {
-				color: {$color};
-				border-color: {$color};
-			}
-		";
-		return $styles;
 	}
 }
 
