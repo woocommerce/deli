@@ -204,6 +204,15 @@ class Deli_Customizer {
 			.order_details:after {
 				background: -webkit-linear-gradient(transparent 0,transparent 0),-webkit-linear-gradient(135deg,#ffffff 33.33%,transparent 33.33%),-webkit-linear-gradient(45deg,#ffffff 33.33%,transparent 33.33%)
 			}
+			
+			.wc-block-components-order-summary-item__quantity {
+				color: '. $button_text_color . ';
+				border-color: '. $button_text_color . ';
+			}
+			
+			.wc-block-cart__submit-container {
+				background-color: '. $button_text_color . ';
+			}
 
 			@media screen and (min-width: 768px) {
 				.deli-primary-navigation {
