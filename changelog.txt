@@ -1,5 +1,8 @@
 *** Deli Changelog ***
 
+2021.06.21 - version 2.0.16
+ * Fix - Style compatibility fixes for the Checkout and Cart blocks.
+
 2019.05.08 - version 2.0.15
  * Fix - Correctly return default setting values in `storefront_setting_default_values()`.
 

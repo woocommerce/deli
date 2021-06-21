@@ -5,7 +5,7 @@ Description:	Deli is a Storefront child theme featuring a texturised, earthy des
 Author:			WooCommerce
 Author URI:		https://woocommerce.com
 Template:		storefront
-Version:		2.0.15
+Version:		2.0.16
 License:		GNU General Public License v2 or later
 License URI:	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			e-commerce, light, blue, brown, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
@@ -288,7 +288,7 @@ table tbody tr:nth-child(2n) td,
     right: 0;
     width: 100%;
     height: 9px;
-    background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-135deg, #f9f9f9 33.33%, transparent 33.33%) 100% 0%, transparent -webkit-linear-gradient(-45deg, #f9f9f9 33.33%, transparent 33.33%) 100% 0%;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, transparent 0%), -webkit-linear-gradient(-135deg, #f9f9f9 33.33%, transparent 33.33%) 100% 0%, rgba(0, 0, 0, 0) -webkit-linear-gradient(-45deg, #f9f9f9 33.33%, rgba(0, 0, 0, 0) 33.33%) 100% 0%;
     background-size: 0px 100%, 9px 9px, 9px 9px;
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -396,7 +396,7 @@ table.cart td.actions {
     right: 0;
     width: 100%;
     height: 7px;
-    background: -webkit-linear-gradient(transparent 0%, transparent 0%), -webkit-linear-gradient(-135deg, rgba(255, 255, 255, 0.85) 33.33%, transparent 33.33%) 100% 0%, transparent -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.85) 33.33%, transparent 33.33%) 100% 0%;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, transparent 0%), -webkit-linear-gradient(-135deg, rgba(255, 255, 255, 0.85) 33.33%, transparent 33.33%) 100% 0%, rgba(0, 0, 0, 0) -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.85) 33.33%, rgba(0, 0, 0, 0) 33.33%) 100% 0%;
     background-size: 0px 100%, 9px 9px, 9px 9px;
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -469,6 +469,10 @@ body:not(.page-template-template-homepage) .site-main {
 .page-template-template-homepage:not(.has-post-thumbnail) .site-main,
 .page-template-template-homepage .site-main {
   padding-top: 0; }
+  @media screen and (max-width: 767px) {
+    .page-template-template-homepage:not(.has-post-thumbnail) .site-main > .sph-hero:first-child,
+    .page-template-template-homepage .site-main > .sph-hero:first-child {
+      margin-top: 0; } }
 
 .page-template-template-homepage .site-main > .type-page:first-child {
   margin-right: 0 !important;
